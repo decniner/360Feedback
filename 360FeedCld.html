@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Den Sanchez — Professional Capability &amp; Leadership Profile</title>
+<meta name="theme-color" content="#07090f">
+<style>
+:root{--bg:#07090f;--p:#0e1320;--p2:#121a2b;--ln:#212a44;--tx:#e8ecf6;--mu:#8b95ad;--ind:#7484ff;--cy:#4fd1e6;--pu:#a78bfa;--serif:Georgia,"Iowan Old Style","Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{background:var(--bg);color:var(--tx);font:16px/1.65 var(--sans);overflow-x:hidden;background-image:linear-gradient(rgba(116,132,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(116,132,255,.035) 1px,transparent 1px);background-size:48px 48px}
+a{color:var(--cy)}
+:focus-visible{outline:2px solid var(--cy);outline-offset:3px;border-radius:6px}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--ind),var(--cy));z-index:30}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,9,15,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--ln);display:flex;gap:4px;overflow-x:auto;padding:8px 12px;scrollbar-width:none}
+nav a{flex:none;color:var(--mu);text-decoration:none;font-size:14px;padding:10px 14px;border-radius:999px;min-height:44px;display:flex;align-items:center}
+nav a:hover,nav a.on{color:var(--tx);background:var(--p2)}
+main{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:72px 0 8px}
+.lab{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cy);margin-bottom:12px}
+h2{font:400 clamp(28px,6vw,46px)/1.12 var(--serif);letter-spacing:-.01em;max-width:18ch;margin-bottom:16px}
+.intro{color:var(--mu);max-width:62ch;margin-bottom:28px}
+.quote{font:italic 400 clamp(20px,3.6vw,28px)/1.45 var(--serif);border-left:2px solid var(--ind);padding-left:18px;margin:24px 0;max-width:34em}
+.hero{min-height:88vh;display:grid;align-items:center;position:relative;padding:48px 0}
+.hero h1{font:400 clamp(72px,22vw,190px)/.86 var(--serif);letter-spacing:-.04em}
+.hero h1 span{display:block;color:transparent;-webkit-text-stroke:1px var(--ind)}
+.sub{color:var(--cy);margin:22px 0 16px;font-size:14px;letter-spacing:.04em}
+.hero p.big{max-width:34em;font-size:clamp(17px,2.4vw,21px);color:#c6cee2}
+#net{position:absolute;right:-10%;top:4%;width:min(620px,100%);opacity:.5;z-index:-1;pointer-events:none}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{background:linear-gradient(160deg,var(--p2),var(--p));border:1px solid var(--ln);border-radius:14px;padding:18px;text-align:left;color:inherit;font:inherit;width:100%;display:block}
+button.card{cursor:pointer;transition:border-color .2s,transform .2s;min-height:64px}
+button.card:hover{border-color:var(--ind);transform:translateY(-2px)}
+.card h3{font:400 19px/1.3 var(--serif);display:flex;justify-content:space-between;gap:10px}
+.card h3::after{content:"+";color:var(--cy);font-family:var(--sans)}
+.card[aria-expanded=true] h3::after{content:"–"}
+.card .sm{color:var(--mu);font-size:14px;margin-top:6px}
+.card .det{display:none;margin-top:12px;color:#c6cee2;font-size:15px;border-top:1px solid var(--ln);padding-top:12px}
+.card[aria-expanded=true] .det{display:block}
+.static h3::after{content:none}
+.chain{list-style:none;padding:0;position:relative;max-width:640px}
+.chain::before{content:"";position:absolute;left:19px;top:20px;bottom:20px;width:1px;background:linear-gradient(var(--ind),var(--cy))}
+.chain li{position:relative;padding-left:52px;margin-bottom:10px}
+.chain .st{width:100%;text-align:left;color:var(--tx);font:inherit;background:var(--p);border:1px solid var(--ln);border-radius:12px;padding:12px 16px;min-height:48px;cursor:pointer;display:block}
+.chain .st:hover,.chain .st[aria-expanded=true]{border-color:var(--ind)}
+.chain .st b{font-weight:500;letter-spacing:.06em;font-size:14px}
+.chain .n{position:absolute;left:0;top:4px;width:40px;height:40px;border-radius:50%;background:var(--bg);border:1px solid var(--ind);display:grid;place-items:center;font-size:12px;color:var(--cy)}
+.chain .det{display:none;color:#c6cee2;font-size:15px;margin-top:8px}
+.chain .st[aria-expanded=true] .det{display:block}
+.two{display:grid;gap:32px}
+@media(min-width:860px){.two{grid-template-columns:1fr 1fr;align-items:start}section{padding-top:110px}}
+details{margin-top:22px;border:1px dashed var(--ln);border-radius:12px;padding:0 16px;max-width:640px}
+summary{cursor:pointer;color:var(--cy);font-size:14px;min-height:44px;display:flex;align-items:center}
+details p{color:var(--mu);font-size:14px;padding-bottom:14px}
+.score{margin-bottom:22px}
+.score .r{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.score .v{font:400 34px var(--serif);font-variant-numeric:tabular-nums}
+.score small{color:var(--mu);font-size:14px}
+.trk{height:8px;background:var(--p2);border-radius:9px;overflow:hidden;margin-top:6px}
+.trk i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--ind),var(--cy));border-radius:9px;transition:width 1.2s cubic-bezier(.2,.7,.2,1)}
+.avg{font:400 clamp(72px,18vw,140px)/1 var(--serif);color:var(--cy)}
+.note{color:var(--mu);font-size:13px;margin-top:16px;max-width:60ch}
+.tag{display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--pu);border:1px solid var(--pu);border-radius:999px;padding:3px 10px;margin-bottom:12px}
+.map{position:relative;aspect-ratio:2/1;border:1px solid var(--ln);border-radius:16px;background:radial-gradient(circle at 1px 1px,#2a3558 1px,transparent 1.5px) 0 0/18px 18px,var(--p);margin-bottom:16px}
+.map svg{position:absolute;inset:0;width:100%;height:100%}
+.pin{position:absolute;width:44px;height:44px;transform:translate(-50%,-50%);border:0;background:none;cursor:pointer;display:grid;place-items:center}
+.pin::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--cy);box-shadow:0 0 0 5px rgba(79,209,230,.18)}
+.pin[aria-pressed=true]::before{background:var(--pu);box-shadow:0 0 0 7px rgba(167,139,250,.25)}
+.pin span{position:absolute;top:34px;font-size:11px;color:var(--mu);white-space:nowrap}
+#mapinfo{min-height:52px;color:#c6cee2}
+.big3{font:400 clamp(22px,4vw,34px)/1.35 var(--serif);max-width:26em}
+.big3 em{color:var(--cy);font-style:normal}
+.cta{display:inline-flex;align-items:center;min-height:52px;padding:0 28px;border-radius:999px;background:linear-gradient(90deg,var(--ind),#5b6cf0);color:#fff;text-decoration:none;font-weight:500;margin-top:18px}
+footer{border-top:1px solid var(--ln);margin-top:90px;padding:32px 20px 60px;text-align:center;color:var(--mu);font-size:14px}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="bar" aria-hidden="true"></div>
+<nav id="nav" aria-label="Sections"></nav>
+<main>
+<header class="hero" id="top">
+<svg id="net" viewBox="0 0 400 400" aria-hidden="true"></svg>
+<div><h1>DEN<span>SANCHEZ</span></h1>
+<p class="sub">Technical Leadership • SRE • Automation • Global Technology Operations</p>
+<p class="big">A technically deep technology professional who turns complex operational problems into automation, observability, documentation and repeatable team capability.</p>
+<p class="lab" style="margin-top:44px">The engineering loop — tap a stage</p>
+<ol class="chain" id="loop"></ol></div>
+</header>
+<div id="app"></div>
+
+<section id="scores"><p class="lab">360 feedback</p><h2>How reviewers scored the leadership themes</h2>
+<p class="intro">Scores are on a scale of 1–5.</p>
+<div class="two"><div id="sc"></div><div><p class="lab">Calculated average</p><div class="avg" data-n="4.25">4.25</div><small style="color:var(--mu)">out of 5</small>
+<p class="note">These scores were provided as part of Den’s reported 360-degree feedback and are presented exactly as supplied. No benchmarks or company averages are implied.</p></div></div></section>
+
+<section id="global"><p class="lab">Cross-regional collaboration</p><h2>Global technology collaboration</h2>
+<p class="intro">The feedback describes partnership with teams across these regions. It does not imply Den is based in each one. Tap a marker.</p>
+<div class="map" id="map"><svg viewBox="0 0 360 180" preserveAspectRatio="none" aria-hidden="true"><g fill="none" stroke="#4a5cff" stroke-opacity=".5" stroke-width=".7"><path d="M319 54Q300 20 178 36"/><path d="M319 54L294 68"/><path d="M319 54Q300 75 284 89"/><path d="M319 54Q290 30 258 69"/><path d="M319 54L314 115"/></g></svg></div>
+<p id="mapinfo" aria-live="polite">Japan is the hub in this view: the regions below are where reviewers described working relationships.</p>
+<div class="grid" style="margin-top:14px" id="teams"></div></section>
+
+<section id="arch"><p class="lab">Architecture</p><h2>From incident to architecture</h2>
+<span class="tag">Reported reviewer example</span>
+<p class="intro">One reviewer described exceptional technical leadership in platform architecture decisions. A performance bottleneck was addressed with a scalable microservices solution.</p>
+<div class="grid" id="archn"></div>
+<p class="note">These quantitative figures are reproduced from the supplied 360-feedback narrative and are not independently verified within this profile.</p></section>
+
+<section id="sig"><p class="lab">Professional operating principle derived from the feedback</p>
+<p class="quote">Solve the problem properly, automate what should not remain manual, make the result observable, document what was learned, and leave the next person in a better position than you found them.</p>
+<p class="note">Inferred from the feedback. Not a direct quote from Den.</p>
+<div style="margin-top:48px" class="big3">Den is a technically deep, strategically minded SRE and technology professional who turns complex operational problems into <em>scalable engineering solutions</em>, then makes those solutions durable through automation, observability, documentation and knowledge sharing.</div></section>
+
+<section id="about"><p class="lab">About this profile</p>
+<p class="intro">This profile synthesises 360-degree feedback supplied by Den Sanchez. It represents the perceptions and observations contained in that feedback. Quantitative examples supplied by individual reviewers are explicitly identified as reported reviewer claims rather than independently verified measurements.</p></section>
+
+<section id="contact" style="text-align:center;padding-bottom:0"><h2 style="margin:0 auto 12px;max-width:none;font-size:clamp(36px,9vw,72px)">DEN SANCHEZ</h2>
+<p class="sub" style="margin-top:0">Technical Leadership • SRE • Automation • Global Technology Operations</p>
+<p class="quote" style="margin:24px auto;text-align:left">Technical problems become more valuable when the solution survives the person who created it.</p>
+<a class="cta" href="mailto:densanchez@gmail.com">Email densanchez@gmail.com</a></section>
+</main>
+<footer><b style="color:var(--tx)">Den Sanchez — Professional Capability &amp; Leadership Profile</b><br>A synthesis of supplied 360-degree feedback.<br>Single-file offline professional profile.</footer>
+
+<script>
+const $=(s,p=document)=>p.querySelector(s);
+const mk=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e};
+const FB='Supporting feedback theme: ';
+const S=[
+{id:'profile',nav:'Profile',lab:'The professional profile',title:'One coherent professional identity',intro:'Across reviewers, the same picture recurs. Den takes complexity, makes it understandable, automates what can be automated, documents what has been learned, and helps other people operate at a higher level.',kind:'cards',items:[
+['Analytical problem solver','Described as having a special ability to approach and analyse problems, root out causes and reach timely solutions.'],
+['Strategic thinker','Feedback highlights strategic vision, forward planning and architecture decisions.'],
+['Automation engineer and SRE practitioner','Repeatedly described as highly capable in PowerShell, production automation and SRE work.'],
+['Endpoint and digital workspace expert','Deep knowledge of Windows, endpoint platforms, Digital Workspace and Windows VDI.'],
+['Communicator and documenter','Clear technical explanations, presentations and step-by-step documentation.'],
+['Mentor across teams','Approachable, reliable and willing to advise, mentor and connect colleagues with experts.']],
+ev:'Technical expertise, problem solving and mentorship themes were consistent across multiple reviewers.'},
+{id:'works',nav:'How Den works',lab:'Working method',title:'How Den works',intro:'A nine-stage engineering loop. The outcome: individual expertise becomes organisational capability.',kind:'chain',items:[
+['Understand','Looks for the underlying problem rather than the visible symptom: root-cause analysis, structured investigation, decomposition, understanding system behaviour.'],
+['Analyse','Breaks complex problems into components, identifies dependencies and constraints, and finds practical solutions. Reviewers say he can “root out the causes of problems”.'],
+['Plan','Strategic planning and advance preparation. One reviewer noted remarkable clarity regarding project targets and deliverables.'],
+['Engineer','Turns understanding into working solutions: architecture, PowerShell, Windows and platform engineering, SRE and operational tooling.'],
+['Automate','One of the strongest recurring themes: production automation, process improvement, less repetitive manual work, repeatable engineering.'],
+['Observe','Telemetry, metrics, monitoring, proactive alerts and operational visibility, including a reporting framework example from the feedback.'],
+['Document','Clear, concise, structured, step-by-step, rich in screenshots and tables. Documentation becomes organisational memory.'],
+['Share','Mentoring, technical advice, helping colleagues, connecting people with experts, developing SRE capability.'],
+['Scale','Converts individual technical capability into organisational capability. The value is not limited to what Den personally builds.']],
+ev:'Problem solving, strategic thinking, automation, SRE and documentation themes.'},
+{id:'tech',nav:'Technical',lab:'Technical capability',title:'Technical capability',intro:'Areas named in the feedback. No proficiency percentages or certifications are implied.',kind:'cards',items:[
+['Automation &amp; SRE','PowerShell, production automation, SRE automation, operational efficiency, process improvement.'],
+['Observability','Telemetry, metrics, monitoring, proactive alerts, reporting, operational visibility.'],
+['Endpoint &amp; digital workspace','Windows, endpoint technology, Digital Workspace, Windows VDI, endpoint platforms, workspace operations.'],
+['Platform engineering','Platform architecture, production services, engineering solutions, scalability, performance improvement.'],
+['Operations','Production changes, platform upgrades, migration programmes, major incidents, service restoration.'],
+['Technical communication','Documentation, presentations, technical explanations, English and Japanese communication, stakeholder communication.']],
+ev:'Technical expertise theme: reviewers describe Den as technically strong, deeply knowledgeable and practically capable.'},
+{id:'lead',nav:'Leadership',lab:'Leadership style',title:'Leadership without dependence on hierarchy',intro:'The feedback describes leadership through technical credibility, capability building and influence.',kind:'cards',items:[
+['Lead by solving','Demonstrate practical solutions.'],['Lead by teaching','Share knowledge rather than keeping expertise concentrated.'],['Lead by documenting','Make knowledge accessible.'],['Lead by enabling','Create tools and automation that help others.'],['Lead by connecting','Connect people, teams and expertise.']],
+quote:'Technical leadership does not always require formal authority. It can also emerge through expertise, trust, reliability, knowledge sharing and the ability to make other people more effective.',ev:'Mentorship and strategic thinking themes.'},
+{id:'docs',nav:'Knowledge',lab:'Documentation',title:'Knowledge that doesn’t disappear',intro:'Den is described as writing documentation frequently and to a high standard: tables, screenshots, explanations, system configuration, context, troubleshooting, step-by-step procedures and general guidance.',kind:'chain',items:[
+['Individual knowledge','What one person understands about a system.'],['Documented knowledge','Written down clearly, with screenshots and tables.'],['Shared knowledge','Available to colleagues across teams.'],['Organisational capability','Others can operate, troubleshoot and improve without depending on one person.']],
+ev:'Documentation theme: a high volume of clear, concise, step-by-step material, described as an organisational asset.'},
+{id:'auto',nav:'Automation',lab:'Automation as a multiplier',title:'From manual work to engineered capability',intro:'Reviewers describe multiple production automation deliveries, and one called Den the highest achiever in the team for production automation delivery. No counts or ROI figures are claimed here.',kind:'chain',items:[
+['Manual process','Repetitive work that depends on individuals.'],['Automation','PowerShell and SRE automation replace manual steps.'],['Repeatability','The same result every time.'],['Consistency','Fewer variations across teams and regions.'],['Observability','Automated work reports its own health.'],['Scalability','Capability that grows without growing manual effort.']],
+ev:'Automation theme: PowerShell, production automation, operational efficiency and process improvement.'},
+{id:'obs',nav:'Observability',lab:'Observability',title:'Make the system visible',intro:'Feedback credits Den with contributions to telemetry, observability, metrics, monitoring, reporting and proactive alerts, including a reviewer-cited reporting-framework example.',kind:'chain',items:[
+['System','The service or platform in operation.'],['Data','Telemetry collected from it.'],['Metrics','Data turned into measurable signals.'],['Visibility','Reporting that shows the real state.'],['Alerting','Proactive alerts before users notice.'],['Action','Teams respond with context.'],['Improvement','Findings feed back into engineering.']],
+ev:'SRE theme: telemetry, observability, metrics, monitoring, reporting and proactive alerts.'},
+{id:'solve',nav:'Problem solving',lab:'Problem solving',title:'How complex problems become practical solutions',intro:'Reviewers describe an ability to identify causes and appropriate solutions in a timely manner.',kind:'chain',items:[
+['Problem','A visible failure or bottleneck.'],['Investigation','Structured analysis of behaviour.'],['Root cause','The underlying reason.'],['Design','A practical, scalable approach.'],['Implementation','Engineering the fix.'],['Automation','Removing the manual path.'],['Monitoring','Confirming it stays fixed.'],['Documentation','Recording what was learned.'],['Knowledge transfer','Passing it to the team.']],
+ev:'Problem solving theme.'},
+{id:'comm',nav:'Communication',lab:'Communication',title:'Making complex technology understandable',intro:'Reviewers highlight strong English, Japanese communication, clear explanations, concise technical and SRE presentations, requirement understanding and cross-regional communication.',kind:'chain',items:[
+['Complex system','Detailed, layered technology.'],['Structured explanation','Clear, concise presentation.'],['Clear documentation','Reusable written reference.'],['Shared understanding','Stakeholders and engineers aligned.'],['Better execution','Work lands correctly the first time.']],
+ev:'Communication theme.'},
+{id:'mentor',nav:'Mentoring',lab:'Mentorship',title:'Knowledge multiplication',intro:'Colleagues describe Den as approachable and willing to help with advice, guidance, troubleshooting, PowerShell, SQL, SRE knowledge and introductions to other experts.',kind:'cards',items:[
+['The goal is not to be the person everyone depends on','It is to help other people become more capable.'],['Advice and troubleshooting','Practical technical guidance when colleagues are stuck.'],['Connections','Links colleagues with the right experts.']],
+ev:'Mentorship theme: approachable, reliable, willing to advise and mentor.'},
+{id:'learn',nav:'Learning',lab:'Professional development',title:'Continuous learning',intro:'',kind:'cards',items:[
+['SRE Architect certification','A reviewer cited this as evidence of continuous learning, professional development, dedication, strategic planning and the ability to execute challenging goals. No provider, date or level is stated in the feedback.']],
+ev:'Professional development theme.'},
+{id:'impact',nav:'Impact',lab:'Impact themes',title:'Impact dashboard',intro:'Themes only, with no numerical scores assigned.',kind:'static',items:[
+['Automation','Production automation and operational efficiency.'],['Reliability','SRE, observability and proactive monitoring.'],['Knowledge','Documentation and knowledge sharing.'],['Global','Cross-regional collaboration.'],['Strategy','Planning and architectural thinking.'],['Enablement','Mentoring and technical guidance.']]},
+{id:'mult',nav:'Multiplier',lab:'Centrepiece',title:'The technical multiplier',intro:'Individual expertise to organisational capability.',kind:'chain',items:[
+['Individual expertise','Deep technical understanding.'],['Engineering solution','A practical design.'],['Automation','Repeatable execution.'],['Observability','Visible behaviour.'],['Documentation','Durable knowledge.'],['Knowledge sharing','Colleagues learn the how and why.'],['Team capability','The team can act without waiting.'],['Organisational capability','The capability outlasts any one person.']]},
+{id:'rely',nav:'Relied on for',lab:'What people rely on Den for',title:'Capability map',intro:'Tap a capability.',kind:'cards',items:[
+['Problem solving','Root-cause analysis and practical solutions.'],['Automation','PowerShell, SRE automation and operational tooling.'],['Windows','Platform and endpoint expertise.'],['SRE','Automation, observability and engineering practices.'],['Documentation','Clear system and process knowledge.'],['Troubleshooting','Practical technical guidance.'],['Architecture','Technical design and platform decisions.'],['Migration','Technical execution and operational support.'],['Observability','Metrics, telemetry and monitoring.'],['Communication','Clear technical explanations.'],['Mentoring','Advice and knowledge sharing.'],['Global collaboration','Cross-region coordination and technical partnership.']]},
+{id:'portrait',nav:'Portrait',lab:'Final portrait',title:'The professional portrait',intro:'The strongest pattern is not any single compliment. It is the consistency across multiple reviewers.',kind:'chips',items:['Analytical','Technical','Strategic','Reliable','Approachable','Automation-oriented','Documentation-driven','Collaborative','Global','SRE-minded','Knowledge-sharing','Architecture-aware'],
+quote:'Understands complex technology environments, identifies opportunities for improvement, engineers practical solutions, automates repetitive work, makes systems observable, documents what matters, and shares knowledge so the capability becomes part of the organisation.'},
+{id:'next',nav:'Next',lab:'Career evolution',title:'The next evolution: expansion of existing strengths',intro:'The feedback points to ways of extending what already works.',kind:'cards',items:[
+['Formal SRE strategy','Use the existing automation and engineering experience to help shape broader SRE direction.'],['Mentoring','Multiply technical capability through structured knowledge sharing.'],['Organisational visibility','Make successful technical work visible beyond the immediate team.'],['Knowledge leadership','Share technical practices through internal knowledge-sharing channels.'],['Broader technical influence','Extend expertise into wider organisational initiatives.']]}
+];
+// nav
+const nav=$('#nav');
+[['top','Intro'],...S.slice(0,1).map(s=>[s.id,s.nav]),['scores','360 scores'],...S.slice(1,3).map(s=>[s.id,s.nav]),['global','Global'],...S.slice(3).filter(s=>['lead','docs','auto','obs','mentor','rely','next'].includes(s.id)).map(s=>[s.id,s.nav]),['about','About']]
+.forEach(([id,t])=>{const a=mk('a',0,t);a.href='#'+id;nav.append(a)});
+// chain + cards builders
+function chain(items,ol){items.forEach(([n,d],i)=>{const li=mk('li');li.append(mk('span','n',String(i+1).padStart(2,'0')));const b=mk('button','st','<b>'+n.toUpperCase()+'</b><div class="det">'+d+'</div>');b.setAttribute('aria-expanded','false');b.onclick=()=>b.setAttribute('aria-expanded',b.getAttribute('aria-expanded')!=='true');li.append(b);ol.append(li)})}
+function cards(items,st){const g=mk('div','grid');items.forEach(([n,d])=>{if(st){g.append(mk('div','card static','<h3>'+n+'</h3><p class="sm">'+d+'</p>'));return}const b=mk('button','card','<h3>'+n+'</h3><div class="det">'+d+'</div>');b.setAttribute('aria-expanded','false');b.onclick=()=>b.setAttribute('aria-expanded',b.getAttribute('aria-expanded')!=='true');g.append(b)});return g}
+chain([['Understand','Look past the symptom to the underlying problem.'],['Analyse','Decompose, find dependencies and constraints.'],['Plan','Set clear targets and deliverables ahead of time.'],['Engineer','Build the practical solution.'],['Automate','Remove repetitive manual work.'],['Observe','Add telemetry, metrics and alerts.'],['Document','Capture what was learned.'],['Share','Teach and connect people.'],['Scale','Individual expertise becomes organisational capability.']],$('#loop'));
+const app=$('#app');
+S.forEach(s=>{
+const sec=mk('section');sec.id=s.id;
+sec.append(mk('p','lab',s.lab),mk('h2',0,s.title));
+if(s.intro)sec.append(mk('p','intro',s.intro));
+if(s.kind==='chain'){const ol=mk('ol','chain');chain(s.items,ol);sec.append(ol)}
+else if(s.kind==='cards')sec.append(cards(s.items));
+else if(s.kind==='static')sec.append(cards(s.items,1));
+else if(s.kind==='chips'){const g=mk('div','grid');g.style.gridTemplateColumns='repeat(auto-fill,minmax(160px,1fr))';s.items.forEach(t=>g.append(mk('div','card static','<h3>'+t+'</h3>')));sec.append(g)}
+if(s.quote)sec.append(mk('p','quote',s.quote));
+if(s.ev)sec.append(mk('details',0,'<summary>See supporting feedback theme</summary><p>'+s.ev+' Reported in 360 feedback and paraphrased here.</p>'));
+app.append(sec);
+if(s.id==='profile')app.append($('#scores'));
+if(s.id==='tech')app.append($('#global'),$('#arch'));
+if(s.id==='rely')app.append($('#sig'));
+});
+['about','contact'].forEach(i=>$('main').append($('#'+i)));
+// scores
+const SC=[['Explore Insights & Visions',4.45],['Make Strategic Decisions',4.55],['Inclusion',4.09],['Inspire Entrepreneurship Among the Team',4.09],['Elevate Organisational Objectives',4.09]];
+SC.forEach(([n,v])=>{$('#sc').append(mk('div','score','<div class="r"><span>'+n+'</span><span><span class="v" data-n="'+v+'">0.00</span> <small>/ 5</small></span></div><div class="trk" role="img" aria-label="'+n+': '+v+' out of 5"><i data-w="'+v/5*100+'"></i></div>'))});
+// arch
+[['40%','reduction in latency'],['3×','transaction volume capability'],['↑','improved client satisfaction']].forEach(([a,b])=>$('#archn').append(mk('div','card static','<h3 style="font-size:38px">'+a+'</h3><p class="sm">'+b+' (reported by one reviewer)</p>')));
+// teams
+['Regional desktop support','Infrastructure','Workspace operations','Engineering','Global infrastructure','Production services','Migration programmes','Major incident management','Service restoration'].forEach(t=>$('#teams').append(mk('div','card static','<p class="sm" style="margin:0;color:#c6cee2">'+t+'</p>')));
+// map
+const R=[['Japan',319,54,'Referenced in the feedback, including Japanese-language communication.'],['Hong Kong',294,68,'Regional collaboration described by reviewers.'],['Singapore',284,89,'Regional collaboration described by reviewers.'],['India',258,69,'Collaboration described by reviewers.'],['UK',178,36,'Collaboration with UK teams described by reviewers.'],['Australia',314,115,'Collaboration described by reviewers.']];
+R.forEach(([n,x,y,d])=>{const b=mk('button','pin','<span>'+n+'</span>');b.style.left=x/3.6+'%';b.style.top=y/1.8+'%';b.setAttribute('aria-label',n);b.setAttribute('aria-pressed','false');b.onclick=()=>{document.querySelectorAll('.pin').forEach(p=>p.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');$('#mapinfo').textContent=n+': '+d};$('#map').append(b)});
+// hero network
+(()=>{const svg=$('#net'),N=['Problem','Automation','Observability','Documentation','Knowledge','People','Systems','Strategy'];let o='';const P=N.map((n,i)=>{const a=i/8*6.283;return[200+140*Math.cos(a),200+140*Math.sin(a),n]});
+P.forEach((p,i)=>{o+='<line x1="200" y1="200" x2="'+p[0]+'" y2="'+p[1]+'" stroke="#7484ff" stroke-opacity=".35"/>';const q=P[(i+1)%8];o+='<line x1="'+p[0]+'" y1="'+p[1]+'" x2="'+q[0]+'" y2="'+q[1]+'" stroke="#4fd1e6" stroke-opacity=".25"/>'});
+P.forEach(p=>{o+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="5" fill="#4fd1e6"/><text x="'+p[0]+'" y="'+(p[1]+(p[1]>200?20:-12))+'" fill="#8b95ad" font-size="11" text-anchor="middle">'+p[2]+'</text>'});
+o+='<circle cx="200" cy="200" r="10" fill="#7484ff"/>';svg.innerHTML=o})();
+// motion
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function count(e){const t=+e.dataset.n;if(rm){e.textContent=t.toFixed(2);return}const s=performance.now();(function f(n){const k=Math.min(1,(n-s)/1200);e.textContent=(t*(1-Math.pow(1-k,3))).toFixed(2);if(k<1)requestAnimationFrame(f)})(s)}
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(!x.isIntersecting)return;const e=x.target;e.classList.add('in');e.querySelectorAll('[data-n]').forEach(count);e.querySelectorAll('[data-w]').forEach(b=>b.style.width=b.dataset.w+'%');io.unobserve(e)}),{threshold:.15});
+document.querySelectorAll('section').forEach(s=>{s.classList.add('rv');io.observe(s)});
+// progress + nav highlight
+addEventListener('scroll',()=>{const d=document.documentElement;$('#bar').style.width=(d.scrollTop/(d.scrollHeight-d.clientHeight)*100)+'%'},{passive:true});
+const no=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+x.target.id))}}),{rootMargin:'-40% 0px -55% 0px'});
+document.querySelectorAll('section,header').forEach(s=>no.observe(s));
+</script>
+</body>
+</html>
