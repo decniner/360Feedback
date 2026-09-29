@@ -1,0 +1,2722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#06070b">
+<title>Den Sanchez — Professional Capability &amp; Leadership Profile</title>
+<meta name="description" content="Den Sanchez — Technical Leadership, SRE, Automation and Global Technology Operations. A professional capability profile synthesised from supplied 360-degree feedback.">
+<style>
+/* ============================================================
+   0. TOKENS
+   ============================================================ */
+:root{
+  --bg:#06070b;
+  --bg-elev:#0b0e15;
+  --panel:rgba(20,24,34,.62);
+  --panel-2:rgba(255,255,255,.028);
+  --line:rgba(255,255,255,.075);
+  --line-2:rgba(255,255,255,.14);
+  --text:#e9ecf3;
+  --dim:#a2abc0;
+  --mute:#6f7891;
+  --blue:#4b7bff;
+  --cyan:#3ad2e6;
+  --violet:#9179ff;
+  --radius:18px;
+  --maxw:1180px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --font:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+}
+
+/* ============================================================
+   1. RESET / BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:72px}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font);
+  font-size:16px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(1100px 620px at 12% -6%, rgba(75,123,255,.17), transparent 62%),
+    radial-gradient(900px 520px at 92% 4%, rgba(58,210,230,.075), transparent 62%),
+    radial-gradient(1000px 760px at 50% 112%, rgba(145,121,255,.10), transparent 62%);
+}
+body::after{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.021) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.021) 1px,transparent 1px);
+  background-size:64px 64px;
+  -webkit-mask-image:radial-gradient(circle at 50% 26%,#000 0%,transparent 76%);
+  mask-image:radial-gradient(circle at 50% 26%,#000 0%,transparent 76%);
+}
+img,svg{max-width:100%}
+button{font:inherit;color:inherit}
+a{color:inherit}
+h1,h2,h3,h4,p,ul,ol{margin:0}
+ul,ol{padding:0;list-style:none}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
+
+/* ============================================================
+   2. LAYOUT HELPERS
+   ============================================================ */
+main{position:relative;z-index:1}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;width:100%}
+section{position:relative;padding:clamp(60px,9vw,112px) 0}
+.divider{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);max-width:var(--maxw);margin:0 auto}
+
+/* ============================================================
+   3. PROGRESS + NAV
+   ============================================================ */
+#progress{
+  position:fixed;top:0;left:0;height:2px;width:0;z-index:80;
+  background:linear-gradient(90deg,var(--blue),var(--cyan));
+  box-shadow:0 0 12px rgba(58,210,230,.5);
+  transition:width .1s linear;
+}
+.nav{
+  position:sticky;top:0;z-index:70;
+  background:rgba(6,7,11,.78);
+  -webkit-backdrop-filter:blur(16px) saturate(140%);
+  backdrop-filter:blur(16px) saturate(140%);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  max-width:var(--maxw);margin:0 auto;
+  display:flex;gap:4px;overflow-x:auto;padding:8px 14px;
+  scrollbar-width:none;-ms-overflow-style:none;
+  -webkit-overflow-scrolling:touch;
+}
+.nav-inner::-webkit-scrollbar{display:none}
+.nav a{
+  flex:0 0 auto;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--mute);text-decoration:none;padding:11px 14px;border-radius:999px;
+  border:1px solid transparent;transition:color .25s,border-color .25s,background .25s;
+  font-weight:600;white-space:nowrap;
+}
+.nav a:hover{color:var(--text);border-color:var(--line)}
+.nav a.active{color:#fff;background:rgba(75,123,255,.15);border-color:rgba(75,123,255,.38)}
+
+/* ============================================================
+   4. HERO
+   ============================================================ */
+.hero{position:relative;padding:clamp(56px,11vw,110px) 0 clamp(40px,6vw,60px);overflow:hidden}
+.hero-bg{position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.net{
+  position:absolute;right:-26%;top:-14%;width:min(880px,140vw);height:auto;
+  opacity:.55;
+}
+@media(min-width:900px){.net{right:-8%;top:-22%;width:820px;opacity:.7}}
+.net-lines path{stroke-dasharray:5 7;animation:dash 22s linear infinite}
+.net-nodes circle{fill:url(#ng);animation:pulse 5s ease-in-out infinite}
+@keyframes dash{to{stroke-dashoffset:-240}}
+@keyframes pulse{0%,100%{opacity:.45;r:3.6}50%{opacity:1;r:5.2}}
+
+.hero-inner{position:relative;z-index:1}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--cyan);font-weight:700;
+}
+.eyebrow::before{content:"";width:30px;height:1px;background:linear-gradient(90deg,var(--cyan),transparent)}
+
+.hero h1{
+  margin:22px 0 0;
+  font-size:clamp(3.2rem,15.5vw,8.4rem);
+  line-height:.86;
+  letter-spacing:-.045em;
+  font-weight:800;
+}
+.hero h1 .l1{display:block;color:#fff}
+.hero h1 .l2{
+  display:block;
+  background:linear-gradient(100deg,#ffffff 8%,#a9c2ff 44%,#5fe3f2 82%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+.hero .subtitle{
+  margin-top:26px;
+  font-size:clamp(.76rem,2.6vw,1rem);
+  letter-spacing:.14em;text-transform:uppercase;font-weight:600;
+  color:var(--dim);
+}
+.hero .statement{
+  margin-top:24px;max-width:56ch;
+  font-size:clamp(1.05rem,2.9vw,1.4rem);
+  line-height:1.5;color:#c9d2e4;font-weight:350;
+}
+.hero .statement strong{color:#fff;font-weight:600}
+.hero-meta{
+  margin-top:34px;display:flex;flex-wrap:wrap;gap:10px;
+}
+.chip{
+  font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  padding:9px 14px;border-radius:999px;border:1px solid var(--line);
+  color:var(--dim);background:var(--panel-2);
+}
+
+/* ============================================================
+   5. ENGINEERING LOOP (hero chain)
+   ============================================================ */
+.loop{margin-top:clamp(44px,7vw,72px)}
+.loop-head{
+  display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  margin-bottom:18px;
+}
+.loop-head h2{
+  font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--mute);font-weight:700;
+}
+.loop-head .hint{font-size:.72rem;color:var(--mute);letter-spacing:.06em}
+.chain{
+  display:flex;gap:8px;overflow-x:auto;padding:4px 0 14px;
+  scrollbar-width:none;-webkit-overflow-scrolling:touch;
+}
+.chain::-webkit-scrollbar{display:none}
+.chain-node{
+  flex:0 0 auto;cursor:pointer;
+  display:inline-flex;align-items:center;gap:9px;
+  padding:11px 15px;border-radius:12px;
+  background:rgba(255,255,255,.025);
+  border:1px solid var(--line);
+  font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;font-weight:700;
+  color:var(--dim);transition:.3s var(--ease);
+}
+.chain-node .idx{font-family:var(--mono);font-size:.62rem;color:var(--mute)}
+.chain-node:hover{border-color:var(--line-2);color:var(--text)}
+.chain-node[aria-selected="true"]{
+  color:#fff;border-color:rgba(75,123,255,.5);
+  background:linear-gradient(140deg,rgba(75,123,255,.20),rgba(58,210,230,.08));
+  box-shadow:0 0 0 1px rgba(75,123,255,.12),0 10px 30px -14px rgba(75,123,255,.7);
+}
+.chain-node[aria-selected="true"] .idx{color:var(--cyan)}
+.chain-detail{
+  border:1px solid var(--line);border-radius:16px;
+  background:var(--panel);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  padding:20px 22px;min-height:104px;
+  display:flex;flex-direction:column;justify-content:center;gap:6px;
+}
+.chain-detail .cd-k{
+  font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cyan);font-weight:700;
+}
+.chain-detail .cd-v{font-size:clamp(.95rem,2.6vw,1.08rem);color:#ccd4e6;max-width:66ch}
+.chain-detail.fading .cd-v{opacity:0;transform:translateY(6px)}
+.chain-detail .cd-v{transition:opacity .28s var(--ease),transform .28s var(--ease)}
+
+/* ============================================================
+   6. SECTION HEADINGS
+   ============================================================ */
+.label{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--cyan);font-weight:700;
+}
+.label::before{content:"";width:26px;height:1px;background:linear-gradient(90deg,var(--cyan),transparent)}
+h2.title{
+  margin:16px 0 0;
+  font-size:clamp(1.85rem,6.4vw,3.3rem);
+  line-height:1.07;letter-spacing:-.032em;font-weight:750;
+  max-width:24ch;
+}
+h2.title .accent{
+  background:linear-gradient(100deg,#cfe0ff,#6fe0ef);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+.lead{margin-top:20px;max-width:66ch;color:var(--dim);font-size:clamp(.98rem,2.6vw,1.1rem)}
+.lead + .lead{margin-top:14px}
+.subhead{
+  margin-top:clamp(36px,6vw,56px);
+  font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);font-weight:700;
+}
+
+/* ============================================================
+   7. CARDS / GRIDS
+   ============================================================ */
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+
+.card{
+  position:relative;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:22px;
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  transition:border-color .35s var(--ease),transform .35s var(--ease),box-shadow .35s var(--ease);
+  overflow:hidden;
+}
+.card::after{
+  content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:radial-gradient(420px 180px at 12% -30%,rgba(75,123,255,.16),transparent 70%);
+  opacity:0;transition:opacity .4s var(--ease);
+}
+.card:hover{border-color:var(--line-2);transform:translateY(-3px)}
+.card:hover::after{opacity:1}
+.card h3{
+  font-size:1rem;letter-spacing:.01em;font-weight:650;margin:0 0 8px;color:#fff;
+}
+.card p{color:var(--dim);font-size:.92rem}
+.card .num{
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.18em;color:var(--cyan);
+  display:block;margin-bottom:12px;font-weight:700;
+}
+
+/* ============================================================
+   8. REVEAL
+   ============================================================ */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.06s}
+.reveal.d2{transition-delay:.12s}
+.reveal.d3{transition-delay:.18s}
+.reveal.d4{transition-delay:.24s}
+.reveal.d5{transition-delay:.30s}
+
+/* ============================================================
+   9. PULL QUOTE / CALLOUT
+   ============================================================ */
+.pull{
+  margin-top:clamp(32px,5vw,48px);
+  border-left:2px solid rgba(75,123,255,.55);
+  padding:6px 0 6px 22px;
+  font-size:clamp(1.05rem,3vw,1.35rem);
+  line-height:1.5;color:#dbe3f2;font-weight:350;
+  max-width:62ch;
+}
+.pull.cyan{border-left-color:rgba(58,210,230,.6)}
+
+.callout{
+  margin-top:26px;padding:22px 24px;border-radius:var(--radius);
+  border:1px solid rgba(75,123,255,.26);
+  background:linear-gradient(150deg,rgba(75,123,255,.12),rgba(58,210,230,.045));
+}
+.callout p{color:#d5dcec;font-size:clamp(.98rem,2.7vw,1.1rem)}
+.callout .k{
+  display:block;font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--cyan);font-weight:700;margin-bottom:10px;
+}
+
+/* ============================================================
+   10. TAGS
+   ============================================================ */
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tag{
+  font-size:.76rem;padding:7px 12px;border-radius:9px;
+  border:1px solid var(--line);color:var(--dim);background:rgba(255,255,255,.025);
+  transition:border-color .3s,color .3s;
+}
+.tag:hover{border-color:rgba(75,123,255,.4);color:#dfe6f5}
+
+/* ============================================================
+   11. EVIDENCE DISCLOSURE
+   ============================================================ */
+details.evidence{
+  margin-top:16px;border:1px dashed rgba(255,255,255,.14);border-radius:12px;
+  background:rgba(255,255,255,.018);overflow:hidden;
+}
+details.evidence > summary{
+  cursor:pointer;list-style:none;padding:12px 16px;
+  font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+  color:var(--cyan);display:flex;align-items:center;gap:10px;
+}
+details.evidence > summary::-webkit-details-marker{display:none}
+details.evidence > summary::before{
+  content:"";width:6px;height:6px;border-radius:50%;background:var(--cyan);
+  box-shadow:0 0 10px rgba(58,210,230,.8);flex:0 0 auto;
+}
+details.evidence > summary::after{
+  content:"+";margin-left:auto;font-size:1rem;color:var(--mute);transition:transform .3s var(--ease);
+}
+details.evidence[open] > summary::after{transform:rotate(45deg)}
+details.evidence > .ev-body{
+  padding:0 16px 16px;font-size:.88rem;color:var(--dim);
+  border-top:1px solid var(--line);padding-top:14px;margin:0 16px 0;
+}
+details.evidence > .ev-body{padding-left:0;padding-right:0}
+
+/* ============================================================
+   12. ACCORDION (How Den Works)
+   ============================================================ */
+.acc-list{display:grid;gap:10px;margin-top:clamp(32px,5vw,48px)}
+details.acc{
+  border:1px solid var(--line);border-radius:16px;overflow:hidden;
+  background:var(--panel);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  transition:border-color .35s var(--ease);
+}
+details.acc[open]{border-color:rgba(75,123,255,.34);background:rgba(22,27,40,.75)}
+details.acc > summary{
+  cursor:pointer;list-style:none;padding:18px 20px;
+  display:flex;align-items:center;gap:16px;
+}
+details.acc > summary::-webkit-details-marker{display:none}
+details.acc > summary::after{
+  content:"";margin-left:auto;flex:0 0 auto;width:11px;height:11px;
+  border-right:1.6px solid var(--mute);border-bottom:1.6px solid var(--mute);
+  transform:rotate(45deg) translateY(-2px);transition:transform .35s var(--ease),border-color .35s;
+}
+details.acc[open] > summary::after{transform:rotate(-135deg) translateY(-2px);border-color:var(--cyan)}
+.acc-num{
+  font-family:var(--mono);font-size:.78rem;font-weight:700;color:var(--cyan);
+  flex:0 0 auto;letter-spacing:.06em;opacity:.85;
+}
+.acc-title{
+  font-size:clamp(.95rem,2.8vw,1.06rem);font-weight:650;letter-spacing:.055em;
+  text-transform:uppercase;color:#fff;
+}
+.acc-body{padding:0 20px 22px 20px;color:var(--dim);font-size:.94rem}
+.acc-body p + p{margin-top:12px}
+.acc-body ul{margin-top:12px;display:grid;gap:8px}
+.acc-body li{position:relative;padding-left:18px}
+.acc-body li::before{
+  content:"";position:absolute;left:0;top:.65em;width:5px;height:5px;border-radius:50%;
+  background:var(--blue);box-shadow:0 0 8px rgba(75,123,255,.7);
+}
+.acc-note{
+  margin-top:16px;padding:14px 16px;border-radius:12px;
+  background:rgba(58,210,230,.055);border:1px solid rgba(58,210,230,.2);
+  color:#cfd9ea;font-size:.88rem;
+}
+.acc-note strong{color:var(--cyan);font-weight:650}
+
+/* ============================================================
+   13. 360 DASHBOARD
+   ============================================================ */
+.score-hero{
+  display:grid;gap:22px;
+  grid-template-columns:1fr;
+  margin-top:clamp(32px,5vw,48px);
+}
+@media(min-width:820px){.score-hero{grid-template-columns:minmax(260px,340px) 1fr;align-items:center}}
+
+.ring-wrap{
+  position:relative;display:flex;align-items:center;justify-content:center;
+  padding:16px;
+}
+.ring{width:min(260px,72vw);height:auto;transform:rotate(-90deg)}
+.ring .track{fill:none;stroke:rgba(255,255,255,.07);stroke-width:10}
+.ring .val{
+  fill:none;stroke:url(#ringGrad);stroke-width:10;stroke-linecap:round;
+  transition:stroke-dashoffset 1.6s var(--ease);
+}
+.ring-center{
+  position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;pointer-events:none;
+}
+.ring-center .big{
+  font-size:clamp(2.4rem,9vw,3.2rem);font-weight:750;letter-spacing:-.03em;line-height:1;color:#fff;
+  font-variant-numeric:tabular-nums;
+}
+.ring-center .big small{font-size:.42em;color:var(--mute);font-weight:600;letter-spacing:0}
+.ring-center .cap{
+  margin-top:8px;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);font-weight:700;
+}
+
+.bars{display:grid;gap:14px}
+.bar-row{
+  border:1px solid var(--line);border-radius:14px;padding:15px 17px;
+  background:var(--panel-2);transition:border-color .3s;
+}
+.bar-row:hover{border-color:var(--line-2)}
+.bar-top{display:flex;align-items:baseline;justify-content:space-between;gap:14px}
+.bar-name{font-size:.9rem;color:#dfe6f5;font-weight:550}
+.bar-val{
+  font-family:var(--mono);font-size:.95rem;font-weight:700;color:var(--cyan);
+  font-variant-numeric:tabular-nums;flex:0 0 auto;
+}
+.bar-track{
+  margin-top:11px;height:6px;border-radius:99px;background:rgba(255,255,255,.07);overflow:hidden;
+}
+.bar-fill{
+  height:100%;width:0;border-radius:99px;
+  background:linear-gradient(90deg,var(--blue),var(--cyan));
+  transition:width 1.5s var(--ease);
+  box-shadow:0 0 14px rgba(58,210,230,.4);
+}
+
+.radar-wrap{
+  margin-top:22px;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--panel);padding:20px 16px 12px;
+}
+.radar-wrap .radar-title{
+  font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);font-weight:700;
+  padding:0 6px 10px;
+}
+.radar{width:100%;height:auto;display:block}
+.radar .grid-line{fill:none;stroke:rgba(255,255,255,.08);stroke-width:1}
+.radar .axis{stroke:rgba(255,255,255,.08);stroke-width:1}
+.radar .shape{
+  fill:rgba(75,123,255,.20);stroke:var(--cyan);stroke-width:2;
+  stroke-linejoin:round;
+  transition:opacity 1s var(--ease);
+}
+.radar .pt{fill:var(--cyan)}
+.radar .ax-label{fill:var(--mute);font-size:9.5px;font-family:var(--font);letter-spacing:.04em}
+
+.note{
+  margin-top:22px;font-size:.82rem;color:var(--mute);
+  padding:14px 16px;border-radius:12px;border:1px solid var(--line);
+  background:rgba(255,255,255,.02);max-width:76ch;
+}
+
+/* ============================================================
+   14. FLOW CHAINS
+   ============================================================ */
+.vchain{position:relative;padding-left:26px;margin-top:clamp(28px,4vw,40px)}
+.vchain::before{
+  content:"";position:absolute;left:5px;top:14px;bottom:14px;width:1px;
+  background:linear-gradient(180deg,rgba(75,123,255,.9),rgba(58,210,230,.75),rgba(145,121,255,.15));
+}
+.vchain li{
+  position:relative;padding:12px 0 12px 20px;
+  font-size:clamp(.9rem,2.6vw,1rem);color:#d6deee;letter-spacing:.03em;
+}
+.vchain li::before{
+  content:"";position:absolute;left:-26px;top:1.35em;width:10px;height:10px;border-radius:50%;
+  background:#0a0d14;border:2px solid var(--blue);
+  box-shadow:0 0 12px rgba(75,123,255,.6);
+}
+.vchain li:last-child::before{border-color:var(--cyan);box-shadow:0 0 14px rgba(58,210,230,.75)}
+.vchain li strong{color:#fff;font-weight:600}
+
+.hflow{
+  display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+  margin-top:clamp(28px,4vw,40px);
+}
+.hflow .step{
+  padding:11px 16px;border-radius:12px;border:1px solid var(--line);
+  background:rgba(255,255,255,.028);
+  font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;font-weight:650;color:#d3dbec;
+}
+.hflow .arw{color:var(--blue);font-size:.9rem;opacity:.8}
+
+/* ============================================================
+   15. CAPABILITY MATRIX
+   ============================================================ */
+.cap-card{padding:0;overflow:hidden}
+.cap-head{
+  width:100%;display:flex;align-items:center;gap:14px;
+  padding:20px 20px;background:none;border:0;cursor:pointer;text-align:left;
+}
+.cap-head .dot{
+  width:9px;height:9px;border-radius:50%;flex:0 0 auto;
+  background:linear-gradient(140deg,var(--blue),var(--cyan));
+  box-shadow:0 0 12px rgba(75,123,255,.65);
+}
+.cap-head .cap-name{
+  font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#fff;
+}
+.cap-head .caret{
+  margin-left:auto;flex:0 0 auto;width:11px;height:11px;
+  border-right:1.6px solid var(--mute);border-bottom:1.6px solid var(--mute);
+  transform:rotate(45deg) translateY(-3px);transition:transform .35s var(--ease),border-color .3s;
+}
+.cap-head[aria-expanded="true"] .caret{transform:rotate(-135deg) translateY(-3px);border-color:var(--cyan)}
+.cap-head[aria-expanded="true"]{border-bottom:1px solid var(--line)}
+.expand{display:grid;grid-template-rows:0fr;transition:grid-template-rows .42s var(--ease)}
+.expand.open{grid-template-rows:1fr}
+.expand > .expand-inner{overflow:hidden}
+.cap-body{padding:18px 20px 22px}
+.cap-body p{color:var(--dim);font-size:.9rem}
+.cap-body .tags{margin-top:14px}
+
+/* ============================================================
+   16. MAP
+   ============================================================ */
+.map-wrap{
+  margin-top:clamp(30px,5vw,44px);
+  border:1px solid var(--line);border-radius:var(--radius);
+  background:linear-gradient(160deg,rgba(18,22,32,.7),rgba(10,12,18,.7));
+  padding:18px 14px 10px;overflow:hidden;
+}
+.map{width:100%;height:auto;display:block}
+.map .grat{stroke:rgba(255,255,255,.055);stroke-width:1;fill:none}
+.map .grat-strong{stroke:rgba(255,255,255,.11);stroke-width:1;fill:none}
+.map .link{
+  fill:none;stroke:rgba(90,150,255,.5);stroke-width:1.3;
+  stroke-dasharray:4 6;
+  animation:dashmove 3.2s linear infinite;
+}
+@keyframes dashmove{to{stroke-dashoffset:-40}}
+.map .marker-glow{fill:rgba(75,123,255,.18)}
+.map .marker{fill:#0a0d14;stroke:var(--cyan);stroke-width:2}
+.map .marker-core{fill:var(--cyan)}
+.map .rlabel{
+  fill:#c6d1e8;font-size:11px;font-family:var(--font);letter-spacing:.06em;font-weight:600;
+}
+.map-legend{
+  display:flex;flex-wrap:wrap;gap:10px;padding:6px 6px 10px;
+}
+.map-legend span{
+  font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);
+  padding:6px 11px;border-radius:999px;border:1px solid var(--line);
+}
+.map-cap{padding:8px 6px 6px;font-size:.72rem;color:var(--mute)}
+
+/* ============================================================
+   17. PILLARS
+   ============================================================ */
+.pillar{padding:24px}
+.pillar .pnum{
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;color:var(--cyan);font-weight:700;
+}
+.pillar h3{margin-top:12px;font-size:1.05rem;letter-spacing:.03em;text-transform:uppercase;font-weight:700}
+.pillar p{margin-top:10px;font-size:.92rem;color:var(--dim)}
+.pillar .pline{
+  margin-top:18px;height:1px;background:linear-gradient(90deg,rgba(75,123,255,.6),transparent);
+}
+
+/* ============================================================
+   18. MULTIPLIER
+   ============================================================ */
+.mult{
+  margin-top:clamp(34px,5vw,52px);
+  display:grid;gap:0;position:relative;
+}
+.mult-step{
+  position:relative;display:flex;align-items:center;gap:16px;
+  padding:16px 20px;border-radius:14px;
+  border:1px solid var(--line);background:var(--panel-2);
+  margin-bottom:10px;
+  transition:border-color .35s var(--ease),transform .35s var(--ease),background .35s;
+}
+.mult-step:hover{border-color:rgba(75,123,255,.42);transform:translateX(4px);background:rgba(75,123,255,.07)}
+.mult-step .mi{
+  font-family:var(--mono);font-size:.68rem;color:var(--mute);font-weight:700;flex:0 0 auto;width:26px;
+}
+.mult-step .mt{font-size:.92rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#e4eaf6}
+.mult-step .ms{margin-left:auto;font-size:.78rem;color:var(--mute);text-align:right;display:none}
+@media(min-width:700px){.mult-step .ms{display:block}}
+.mult-final{
+  margin-top:10px;padding:26px 22px;border-radius:var(--radius);
+  border:1px solid rgba(58,210,230,.34);
+  background:linear-gradient(140deg,rgba(75,123,255,.18),rgba(58,210,230,.08));
+  text-align:center;
+}
+.mult-final .k{font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--cyan);font-weight:700}
+.mult-final .v{
+  margin-top:12px;font-size:clamp(1.15rem,4.2vw,1.7rem);font-weight:750;letter-spacing:-.02em;color:#fff;
+}
+
+/* ============================================================
+   19. IMPACT
+   ============================================================ */
+.impact-card{padding:22px}
+.impact-card .ik{
+  width:34px;height:3px;border-radius:99px;margin-bottom:16px;
+  background:linear-gradient(90deg,var(--blue),var(--cyan));
+}
+.impact-card h3{font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#fff}
+.impact-card p{margin-top:10px;font-size:.9rem;color:var(--dim)}
+
+/* ============================================================
+   20. RELIANCE TILES
+   ============================================================ */
+.tiles{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:clamp(30px,5vw,44px)}
+.tile{
+  text-align:left;cursor:pointer;width:100%;
+  border:1px solid var(--line);border-radius:14px;background:var(--panel-2);
+  padding:16px 16px;transition:border-color .3s var(--ease),background .3s,transform .3s var(--ease);
+}
+.tile:hover{border-color:var(--line-2);transform:translateY(-2px)}
+.tile[aria-expanded="true"]{
+  border-color:rgba(75,123,255,.45);background:rgba(75,123,255,.08);
+}
+.tile .tk{
+  display:block;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:#e6ecf8;
+}
+.tile .tv{
+  display:block;margin-top:8px;font-size:.84rem;color:var(--dim);
+  max-height:0;overflow:hidden;transition:max-height .4s var(--ease),margin .4s var(--ease);
+}
+.tile[aria-expanded="true"] .tv{max-height:120px;margin-top:10px}
+
+/* ============================================================
+   21. SIGNATURE
+   ============================================================ */
+.signature{
+  margin-top:clamp(34px,5vw,52px);
+  border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(28px,6vw,52px);
+  background:linear-gradient(155deg,rgba(24,29,44,.72),rgba(11,14,21,.72));
+  position:relative;overflow:hidden;
+}
+.signature::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(600px 240px at 8% 0%,rgba(75,123,255,.18),transparent 68%);
+}
+.signature blockquote{
+  margin:0;position:relative;
+  font-size:clamp(1.15rem,4.4vw,2rem);line-height:1.34;letter-spacing:-.02em;
+  font-weight:350;color:#eef2fa;
+}
+.signature blockquote::before{content:"\201C";color:var(--cyan);opacity:.7}
+.signature blockquote::after{content:"\201D";color:var(--cyan);opacity:.7}
+.signature .sig-label{
+  margin-top:22px;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--mute);font-weight:700;position:relative;
+}
+
+.onesentence{
+  margin-top:clamp(30px,5vw,44px);
+  border:1px solid rgba(58,210,230,.28);border-radius:var(--radius);
+  padding:clamp(24px,5vw,40px);
+  background:linear-gradient(150deg,rgba(58,210,230,.09),rgba(75,123,255,.07));
+}
+.onesentence p{
+  font-size:clamp(1.05rem,3.6vw,1.5rem);line-height:1.45;letter-spacing:-.015em;color:#f2f6ff;font-weight:400;
+}
+.onesentence p strong{font-weight:650;color:#fff}
+
+/* ============================================================
+   22. PORTRAIT
+   ============================================================ */
+.themes{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.theme{
+  font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;font-weight:650;
+  padding:9px 14px;border-radius:999px;
+  border:1px solid var(--line);color:#c3cde2;background:rgba(255,255,255,.025);
+}
+
+/* ============================================================
+   23. CTA + FOOTER
+   ============================================================ */
+.cta{
+  text-align:center;padding:clamp(60px,10vw,120px) 0 clamp(40px,6vw,70px);
+}
+.cta h2{
+  font-size:clamp(2.2rem,10vw,4.6rem);line-height:.95;letter-spacing:-.04em;font-weight:800;color:#fff;
+}
+.cta .cta-sub{
+  margin-top:20px;font-size:clamp(.72rem,2.5vw,0.88rem);letter-spacing:.16em;text-transform:uppercase;
+  color:var(--dim);font-weight:600;
+}
+.cta .cta-line{
+  margin:30px auto 0;max-width:52ch;font-size:clamp(1rem,3vw,1.25rem);color:#cbd4e6;font-weight:350;
+}
+.mail-btn{
+  display:inline-flex;align-items:center;gap:12px;
+  margin-top:34px;padding:16px 28px;border-radius:999px;
+  text-decoration:none;font-weight:650;letter-spacing:.02em;font-size:.95rem;color:#04070e;
+  background:linear-gradient(100deg,#cfe0ff,#6fe0ef);
+  box-shadow:0 18px 44px -18px rgba(58,210,230,.85);
+  transition:transform .3s var(--ease),box-shadow .3s var(--ease);
+  min-height:52px;
+}
+.mail-btn:hover{transform:translateY(-2px);box-shadow:0 24px 56px -18px rgba(58,210,230,.95)}
+.mail-btn svg{width:17px;height:17px;flex:0 0 auto}
+
+footer{
+  border-top:1px solid var(--line);padding:38px 0 56px;position:relative;z-index:1;
+}
+.foot-grid{display:grid;gap:18px}
+@media(min-width:760px){.foot-grid{grid-template-columns:1.3fr 1fr;align-items:start}}
+.foot-title{font-size:.92rem;font-weight:650;color:#e7ecf7;letter-spacing:.02em}
+.foot-line{margin-top:8px;font-size:.84rem;color:var(--mute)}
+.methodology{
+  border:1px solid var(--line);border-radius:14px;padding:18px 20px;
+  background:rgba(255,255,255,.02);
+}
+.methodology .mk{
+  font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);font-weight:700;
+}
+.methodology p{margin-top:10px;font-size:.84rem;color:var(--dim)}
+
+/* ============================================================
+   24. REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+  }
+  .reveal{opacity:1 !important;transform:none !important}
+  .net-nodes circle{opacity:.7}
+}
+</style>
+</head>
+<body>
+
+<div id="progress" role="presentation"></div>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="nav" aria-label="Section navigation">
+  <div class="nav-inner">
+    <a href="#identity">Profile</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#method">Method</a>
+    <a href="#capability">Capability</a>
+    <a href="#global">Global</a>
+    <a href="#leadership">Leadership</a>
+    <a href="#knowledge">Knowledge</a>
+    <a href="#automation">Automation</a>
+    <a href="#observability">Observability</a>
+    <a href="#problems">Problems</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#communication">Communication</a>
+    <a href="#mentoring">Mentoring</a>
+    <a href="#learning">Learning</a>
+    <a href="#impact">Impact</a>
+    <a href="#multiplier">Multiplier</a>
+    <a href="#portrait">Portrait</a>
+    <a href="#reliance">Reliance</a>
+    <a href="#evolution">Evolution</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="net" viewBox="0 0 600 600" focusable="false">
+      <defs>
+        <radialGradient id="ng" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#7fa8ff" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#3ad2e6" stop-opacity=".25"/>
+        </radialGradient>
+      </defs>
+      <g class="net-lines" fill="none" stroke="rgba(120,160,255,.24)" stroke-width="1">
+        <path d="M300 290 L300 60"/>
+        <path d="M300 290 L490 160"/>
+        <path d="M300 290 L520 370"/>
+        <path d="M300 290 L390 510"/>
+        <path d="M300 290 L200 530"/>
+        <path d="M300 290 L80 400"/>
+        <path d="M300 290 L100 190"/>
+        <path d="M300 60 L490 160"/>
+        <path d="M490 160 L520 370"/>
+        <path d="M520 370 L390 510"/>
+        <path d="M390 510 L200 530"/>
+        <path d="M200 530 L80 400"/>
+        <path d="M80 400 L100 190"/>
+        <path d="M100 190 L300 60"/>
+      </g>
+      <g class="net-nodes">
+        <circle cx="300" cy="290" r="4.5"/>
+        <circle cx="300" cy="60" r="4"/>
+        <circle cx="490" cy="160" r="4"/>
+        <circle cx="520" cy="370" r="4"/>
+        <circle cx="390" cy="510" r="4"/>
+        <circle cx="200" cy="530" r="4"/>
+        <circle cx="80" cy="400" r="4"/>
+        <circle cx="100" cy="190" r="4"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Professional Capability &amp; Leadership Profile</p>
+
+    <h1>
+      <span class="l1">DEN</span>
+      <span class="l2">SANCHEZ</span>
+    </h1>
+
+    <p class="subtitle">Technical Leadership • SRE • Automation • Global Technology Operations</p>
+
+    <p class="statement">
+      A technically deep technology professional who turns complex operational problems into
+      <strong>automation</strong>, <strong>observability</strong>, <strong>documentation</strong>
+      and <strong>repeatable team capability</strong>.
+    </p>
+
+    <div class="hero-meta">
+      <span class="chip">SRE Practitioner</span>
+      <span class="chip">Automation Engineer</span>
+      <span class="chip">Endpoint &amp; Digital Workspace</span>
+      <span class="chip">Technical Documentation</span>
+      <span class="chip">Global Collaboration</span>
+    </div>
+
+    <!-- ENGINEERING LOOP -->
+    <div class="loop">
+      <div class="loop-head">
+        <h2>The Engineering Loop</h2>
+        <span class="hint">Tap a stage to read the principle</span>
+      </div>
+
+      <div class="chain" role="tablist" aria-label="Engineering loop stages">
+        <button class="chain-node" role="tab" aria-selected="true" data-stage="0"><span class="idx">01</span>Understand</button>
+        <button class="chain-node" role="tab" aria-selected="false" data-stage="1"><span class="idx">02</span>Analyse</button>
+        <button class="chain-node" role="tab" aria-selected="false" data-stage="2"><span class="idx">03</span>Design</button>
+        <button class="chain-node" role="tab" aria-selected="false" data-stage="3"><span class="idx">04</span>Engineer</button>
+        <button class="chain-node" role="tab" aria-selected="false" data-stage="4"><span class="idx">05</span>Automate</button>
+        <button class="chain-node" role="tab" aria-selected="false" data-stage="5"><span class="idx">06</span>Observe</button>
+        <button class="chain-node" role="tab" aria-selected="false" data-stage="6"><span class="idx">07</span>Document</button>
+        <button class="chain-node" role="tab" aria-selected="false" data-stage="7"><span class="idx">08</span>Share</button>
+        <button class="chain-node" role="tab" aria-selected="false" data-stage="8"><span class="idx">09</span>Scale</button>
+      </div>
+
+      <div class="chain-detail" id="chainDetail" aria-live="polite">
+        <span class="cd-k" id="cdKey">01 — Understand</span>
+        <span class="cd-v" id="cdVal">Start with the underlying problem, not the visible symptom.</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     01 — THE PROFESSIONAL PROFILE
+     ============================================================ -->
+<section id="identity">
+  <div class="wrap">
+    <p class="label reveal">01 — Identity</p>
+    <h2 class="title reveal d1">The Professional <span class="accent">Profile</span></h2>
+
+    <p class="lead reveal d2">
+      Across the supplied 360-degree feedback, the same picture appears from multiple directions.
+      Den is described as a strong analytical problem solver and a strategic thinker; a highly capable
+      automation engineer and an SRE practitioner; a subject-matter expert in endpoint and digital
+      workspace technology; a strong technical communicator and a highly regarded technical documenter;
+      a dependable technical adviser, a mentor and a knowledge sharer; and a contributor across regional
+      and global technology teams.
+    </p>
+
+    <p class="lead reveal d3">
+      Those are not separate traits. Read together, they describe one consistent professional pattern:
+      someone who turns individual technical knowledge into reusable organisational capability.
+    </p>
+
+    <div class="grid g3" style="margin-top:clamp(32px,5vw,48px)">
+      <article class="card reveal">
+        <span class="num">01</span>
+        <h3>Analytical</h3>
+        <p>Reviewers describe a special ability to approach and analyse problems — rooting out causes and identifying appropriate solutions rather than treating surface symptoms.</p>
+      </article>
+      <article class="card reveal d1">
+        <span class="num">02</span>
+        <h3>Technical</h3>
+        <p>The feedback repeatedly describes Den as technically strong and deeply knowledgeable, with practical strength in engineering, coding, PowerShell and Windows technology.</p>
+      </article>
+      <article class="card reveal d2">
+        <span class="num">03</span>
+        <h3>Strategic</h3>
+        <p>Reviewers highlight strategic vision, project targets, deliverables, forward planning and clear project structure — planning that happens before work begins.</p>
+      </article>
+      <article class="card reveal d1">
+        <span class="num">04</span>
+        <h3>Automation-oriented</h3>
+        <p>Production automation, SRE automation, process improvement and operational efficiency recur throughout the feedback as a defining theme.</p>
+      </article>
+      <article class="card reveal d2">
+        <span class="num">05</span>
+        <h3>Documentation-driven</h3>
+        <p>Den is described as producing a high volume of documentation — clear, concise, step-by-step, rich in tables and screenshots, and useful long after the work is done.</p>
+      </article>
+      <article class="card reveal d3">
+        <span class="num">06</span>
+        <h3>Multiplying</h3>
+        <p>Approachable, reliable, willing to advise, willing to mentor, and willing to connect colleagues with the right people and expertise.</p>
+      </article>
+    </div>
+
+    <div class="callout reveal d2">
+      <span class="k">Core Statement</span>
+      <p>
+        Den takes complexity, makes it understandable, automates what can be automated,
+        documents what has been learned, and helps other people operate at a higher level.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     02 — 360 FEEDBACK DASHBOARD
+     ============================================================ -->
+<section id="feedback">
+  <div class="wrap">
+    <p class="label reveal">02 — 360 Feedback</p>
+    <h2 class="title reveal d1">The <span class="accent">360°</span> View</h2>
+    <p class="lead reveal d2">
+      The scores below were provided as part of Den's reported 360-degree feedback.
+      They are presented exactly as supplied — nothing has been normalised, weighted or benchmarked.
+    </p>
+
+    <div class="score-hero">
+      <!-- RING -->
+      <div class="ring-wrap reveal d2">
+        <svg class="ring" viewBox="0 0 200 200" role="img" aria-label="Average 360 feedback score: 4.25 out of 5">
+          <defs>
+            <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#4b7bff"/>
+              <stop offset="100%" stop-color="#3ad2e6"/>
+            </linearGradient>
+          </defs>
+          <circle class="track" cx="100" cy="100" r="70"/>
+          <circle class="val" id="ringVal" cx="100" cy="100" r="70"/>
+        </svg>
+        <div class="ring-center">
+          <div class="big"><span class="count" data-count="4.25" data-decimals="2">0.00</span><small> / 5</small></div>
+          <div class="cap">Calculated Average</div>
+        </div>
+      </div>
+
+      <!-- BARS -->
+      <div class="bars reveal d3" id="barsBlock">
+        <div class="bar-row" data-bar="4.45">
+          <div class="bar-top">
+            <span class="bar-name">Explore Insights &amp; Visions</span>
+            <span class="bar-val"><span class="count" data-count="4.45" data-decimals="2">0.00</span> / 5</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill"></div></div>
+        </div>
+
+        <div class="bar-row" data-bar="4.55">
+          <div class="bar-top">
+            <span class="bar-name">Make Strategic Decisions</span>
+            <span class="bar-val"><span class="count" data-count="4.55" data-decimals="2">0.00</span> / 5</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill"></div></div>
+        </div>
+
+        <div class="bar-row" data-bar="4.09">
+          <div class="bar-top">
+            <span class="bar-name">Inclusion</span>
+            <span class="bar-val"><span class="count" data-count="4.09" data-decimals="2">0.00</span> / 5</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill"></div></div>
+        </div>
+
+        <div class="bar-row" data-bar="4.09">
+          <div class="bar-top">
+            <span class="bar-name">Inspire Entrepreneurship Among the Team</span>
+            <span class="bar-val"><span class="count" data-count="4.09" data-decimals="2">0.00</span> / 5</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill"></div></div>
+        </div>
+
+        <div class="bar-row" data-bar="4.09">
+          <div class="bar-top">
+            <span class="bar-name">Elevate Organisational Objectives</span>
+            <span class="bar-val"><span class="count" data-count="4.09" data-decimals="2">0.00</span> / 5</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RADAR -->
+    <div class="radar-wrap reveal d2">
+      <div class="radar-title">Capability Radar — 1 to 5 scale</div>
+      <svg class="radar" id="radar" viewBox="0 0 320 300" role="img"
+           aria-label="Radar chart of five 360 feedback dimensions: Explore Insights and Visions 4.45, Make Strategic Decisions 4.55, Inclusion 4.09, Inspire Entrepreneurship 4.09, Elevate Organisational Objectives 4.09."></svg>
+    </div>
+
+    <p class="note reveal d3">
+      These scores were provided as part of Den's reported 360-degree feedback and are presented exactly
+      as supplied. No external benchmark, company average or comparative ranking is implied.
+    </p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     03 — HOW DEN WORKS
+     ============================================================ -->
+<section id="method">
+  <div class="wrap">
+    <p class="label reveal">03 — Method</p>
+    <h2 class="title reveal d1">How Den <span class="accent">Works</span></h2>
+    <p class="lead reveal d2">
+      The feedback describes a repeatable working method rather than a set of isolated skills.
+      It moves from understanding, through engineering, to capability that outlives the original task.
+      Expand each stage for detail.
+    </p>
+
+    <div class="acc-list">
+      <details class="acc reveal" open>
+        <summary><span class="acc-num">01</span><span class="acc-title">Understand</span></summary>
+        <div class="acc-body">
+          <p>
+            Den attempts to understand the underlying problem rather than immediately treating the visible symptom.
+            The feedback describes a disciplined approach: structured investigation, problem decomposition, and a
+            genuine interest in how the system actually behaves before anything is changed.
+          </p>
+          <ul>
+            <li>Root-cause analysis before remediation</li>
+            <li>Structured investigation and problem decomposition</li>
+            <li>Understanding system behaviour as a whole, not just the failing component</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="acc reveal d1">
+        <summary><span class="acc-num">02</span><span class="acc-title">Analyse</span></summary>
+        <div class="acc-body">
+          <p>
+            Complex problems are broken into components. Dependencies are identified, constraints are made explicit,
+            and the practical solution space is narrowed deliberately rather than by guesswork.
+          </p>
+          <ul>
+            <li>Breaking complex problems into manageable components</li>
+            <li>Identifying dependencies and constraints</li>
+            <li>Finding practical solutions that hold in production</li>
+          </ul>
+          <div class="acc-note">
+            <strong>Reported in 360 feedback:</strong> reviewers describe Den's ability to
+            “root out the causes of problems”.
+          </div>
+        </div>
+      </details>
+
+      <details class="acc reveal d2">
+        <summary><span class="acc-num">03</span><span class="acc-title">Plan</span></summary>
+        <div class="acc-body">
+          <p>
+            Planning happens before the work begins. The feedback describes clear targets, defined deliverables
+            and forward thinking — a project structure that other people can understand and align to.
+          </p>
+          <ul>
+            <li>Strategic planning and project preparation</li>
+            <li>Clearly stated targets and deliverables</li>
+            <li>Forward thinking and structured execution</li>
+          </ul>
+          <div class="acc-note">
+            <strong>Reported in 360 feedback:</strong> one reviewer described
+            “remarkable clarity regarding project targets and deliverables”, alongside advanced
+            planning before project initiation.
+          </div>
+        </div>
+      </details>
+
+      <details class="acc reveal">
+        <summary><span class="acc-num">04</span><span class="acc-title">Engineer</span></summary>
+        <div class="acc-body">
+          <p>
+            Understanding is translated into practical engineering. The feedback describes strength across
+            architecture, scripting and platform work — engineering that is designed to run in production,
+            not just to demonstrate a concept.
+          </p>
+          <ul>
+            <li>Architecture and technical design</li>
+            <li>PowerShell and automation engineering</li>
+            <li>Windows and platform engineering</li>
+            <li>SRE practice and operational tooling</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="acc reveal d1">
+        <summary><span class="acc-num">05</span><span class="acc-title">Automate</span></summary>
+        <div class="acc-body">
+          <p>
+            Automation is one of the strongest recurring themes in the supplied feedback. It appears as
+            production automation, SRE automation, process improvement and operational efficiency.
+          </p>
+          <ul>
+            <li>Production automation delivery</li>
+            <li>Process improvement and operational efficiency</li>
+            <li>Reducing repetitive manual work</li>
+            <li>Building repeatable, consistent engineering outcomes</li>
+          </ul>
+          <div class="acc-note">
+            <strong>Reported in 360 feedback:</strong> one reviewer described Den as the highest achiever
+            in the team for production automation delivery. This is a reviewer observation, not an
+            independently verified measurement.
+          </div>
+        </div>
+      </details>
+
+      <details class="acc reveal d2">
+        <summary><span class="acc-num">06</span><span class="acc-title">Observe</span></summary>
+        <div class="acc-body">
+          <p>
+            Once something is built, it is made visible. The feedback describes contributions to telemetry,
+            metrics, monitoring, reporting and proactive alerting — so that problems are detected before
+            they become incidents.
+          </p>
+          <ul>
+            <li>Telemetry and metrics</li>
+            <li>Monitoring and proactive alerting</li>
+            <li>Operational visibility and reporting</li>
+            <li>SRE observability practice</li>
+          </ul>
+          <div class="acc-note">
+            <strong>Reported in 360 feedback:</strong> reviewers described work on a reporting framework,
+            cited as an example of turning raw system data into operational visibility.
+          </div>
+        </div>
+      </details>
+
+      <details class="acc reveal">
+        <summary><span class="acc-num">07</span><span class="acc-title">Document</span></summary>
+        <div class="acc-body">
+          <p>
+            Documentation is treated as a first-class engineering output. The feedback describes it as
+            clear, concise, structured, step-by-step, visual, and rich in screenshots and tables — practical
+            and reusable rather than ceremonial.
+          </p>
+          <ul>
+            <li>Clear, concise, structured writing</li>
+            <li>Step-by-step procedures</li>
+            <li>Tables, screenshots and visual explanation</li>
+            <li>System configuration, setup and operational guidance</li>
+          </ul>
+          <div class="acc-note">
+            <strong>The principle:</strong> documentation becomes organisational memory.
+          </div>
+        </div>
+      </details>
+
+      <details class="acc reveal d1">
+        <summary><span class="acc-num">08</span><span class="acc-title">Share</span></summary>
+        <div class="acc-body">
+          <p>
+            Knowledge is deliberately transferred. The feedback describes mentoring, technical advice,
+            day-to-day troubleshooting support, and connecting colleagues with the right experts —
+            including contributions to SRE capability development.
+          </p>
+          <ul>
+            <li>Mentoring and technical advice</li>
+            <li>Knowledge sharing across teams</li>
+            <li>Helping colleagues solve problems directly</li>
+            <li>Connecting people with the right expertise</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="acc reveal d2">
+        <summary><span class="acc-num">09</span><span class="acc-title">Scale</span></summary>
+        <div class="acc-body">
+          <p>
+            The final stage converts individual technical capability into organisational capability.
+            The value of the work is not limited to what Den personally builds — it is what the team can
+            do afterwards that did not require Den to be present.
+          </p>
+          <div class="acc-note">
+            <strong>Individual expertise → Organisational capability.</strong>
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     04 — TECHNICAL CAPABILITY
+     ============================================================ -->
+<section id="capability">
+  <div class="wrap">
+    <p class="label reveal">04 — Capability</p>
+    <h2 class="title reveal d1">Technical <span class="accent">Capability</span></h2>
+    <p class="lead reveal d2">
+      Six capability domains recur across the supplied feedback. These are the areas colleagues
+      describe relying on. No proficiency percentages or certifications are implied beyond
+      what the feedback explicitly states.
+    </p>
+
+    <div class="grid g2" style="margin-top:clamp(30px,5vw,46px)">
+
+      <div class="card cap-card reveal">
+        <button class="cap-head" aria-expanded="true" aria-controls="cap1">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="cap-name">Automation &amp; SRE</span>
+          <span class="caret" aria-hidden="true"></span>
+        </button>
+        <div class="expand open" id="cap1">
+          <div class="expand-inner">
+            <div class="cap-body">
+              <p>The most frequently cited strength in the feedback. Automation appears as a delivery discipline — production automation, SRE automation, process improvement and operational efficiency.</p>
+              <div class="tags">
+                <span class="tag">PowerShell</span>
+                <span class="tag">Production automation</span>
+                <span class="tag">SRE automation</span>
+                <span class="tag">Operational efficiency</span>
+                <span class="tag">Process improvement</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card cap-card reveal d1">
+        <button class="cap-head" aria-expanded="false" aria-controls="cap2">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="cap-name">Observability</span>
+          <span class="caret" aria-hidden="true"></span>
+        </button>
+        <div class="expand" id="cap2">
+          <div class="expand-inner">
+            <div class="cap-body">
+              <p>Making systems visible: telemetry, metrics, monitoring and proactive alerting, with reporting that turns raw data into something operations can act on.</p>
+              <div class="tags">
+                <span class="tag">Telemetry</span>
+                <span class="tag">Metrics</span>
+                <span class="tag">Monitoring</span>
+                <span class="tag">Proactive alerts</span>
+                <span class="tag">Reporting</span>
+                <span class="tag">Operational visibility</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card cap-card reveal">
+        <button class="cap-head" aria-expanded="false" aria-controls="cap3">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="cap-name">Endpoint &amp; Digital Workspace</span>
+          <span class="caret" aria-hidden="true"></span>
+        </button>
+        <div class="expand" id="cap3">
+          <div class="expand-inner">
+            <div class="cap-body">
+              <p>The feedback describes deep domain knowledge in endpoint and digital workspace technology — the area in which Den is most often treated as a subject-matter expert.</p>
+              <div class="tags">
+                <span class="tag">Windows</span>
+                <span class="tag">Endpoint technology</span>
+                <span class="tag">Digital Workspace</span>
+                <span class="tag">Windows VDI</span>
+                <span class="tag">Endpoint platforms</span>
+                <span class="tag">Workspace operations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card cap-card reveal d1">
+        <button class="cap-head" aria-expanded="false" aria-controls="cap4">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="cap-name">Platform Engineering</span>
+          <span class="caret" aria-hidden="true"></span>
+        </button>
+        <div class="expand" id="cap4">
+          <div class="expand-inner">
+            <div class="cap-body">
+              <p>Architecture and engineering of production services, with attention to scalability, performance and long-term operability.</p>
+              <div class="tags">
+                <span class="tag">Platform architecture</span>
+                <span class="tag">Production services</span>
+                <span class="tag">Engineering solutions</span>
+                <span class="tag">Scalability</span>
+                <span class="tag">Performance improvement</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card cap-card reveal">
+        <button class="cap-head" aria-expanded="false" aria-controls="cap5">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="cap-name">Operations</span>
+          <span class="caret" aria-hidden="true"></span>
+        </button>
+        <div class="expand" id="cap5">
+          <div class="expand-inner">
+            <div class="cap-body">
+              <p>Operational execution across production change, platform upgrades, migration programmes and major incidents — including service restoration.</p>
+              <div class="tags">
+                <span class="tag">Production changes</span>
+                <span class="tag">Platform upgrades</span>
+                <span class="tag">Migration programmes</span>
+                <span class="tag">Major incidents</span>
+                <span class="tag">Service restoration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card cap-card reveal d1">
+        <button class="cap-head" aria-expanded="false" aria-controls="cap6">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="cap-name">Technical Communication</span>
+          <span class="caret" aria-hidden="true"></span>
+        </button>
+        <div class="expand" id="cap6">
+          <div class="expand-inner">
+            <div class="cap-body">
+              <p>Explaining complex technology clearly — through documentation, presentations and day-to-day stakeholder communication, in English and Japanese.</p>
+              <div class="tags">
+                <span class="tag">Documentation</span>
+                <span class="tag">Presentations</span>
+                <span class="tag">Technical explanations</span>
+                <span class="tag">English communication</span>
+                <span class="tag">Japanese communication</span>
+                <span class="tag">Stakeholder communication</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     05 — GLOBAL COLLABORATION
+     ============================================================ -->
+<section id="global">
+  <div class="wrap">
+    <p class="label reveal">05 — Global</p>
+    <h2 class="title reveal d1">Global Technology <span class="accent">Collaboration</span></h2>
+    <p class="lead reveal d2">
+      The feedback describes collaboration across regions and functions — not a single team, and not a
+      single geography. Den works across regional desktop support, infrastructure, workspace operations
+      and engineering teams, alongside global technology stakeholders, production services,
+      migration programmes, major incident management and service restoration.
+    </p>
+
+    <div class="map-wrap reveal d2">
+      <div class="radar-title" style="font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);font-weight:700;padding:0 6px 12px;">
+        Cross-Region Collaboration Plot
+      </div>
+      <svg class="map" id="mapSvg" viewBox="0 0 720 360" role="img"
+           aria-label="Abstract coordinate plot showing collaboration regions: Japan, Hong Kong, Singapore, India, United Kingdom and Australia, connected by collaboration paths."></svg>
+      <div class="map-legend">
+        <span>Japan</span>
+        <span>Hong Kong</span>
+        <span>Singapore</span>
+        <span>India</span>
+        <span>United Kingdom</span>
+        <span>Australia</span>
+      </div>
+      <p class="map-cap">
+        Region markers are plotted at approximate representative coordinates for visual reference only.
+        This illustrates cross-regional collaboration and does not imply physical presence in every region.
+      </p>
+    </div>
+
+    <div class="grid g3" style="margin-top:clamp(28px,4vw,40px)">
+      <div class="card reveal">
+        <span class="num">Teams</span>
+        <h3>Who Den works with</h3>
+        <div class="tags">
+          <span class="tag">Regional desktop support</span>
+          <span class="tag">Infrastructure</span>
+          <span class="tag">Workspace operations</span>
+          <span class="tag">Engineering</span>
+          <span class="tag">Global infrastructure</span>
+        </div>
+      </div>
+      <div class="card reveal d1">
+        <span class="num">Scenarios</span>
+        <h3>Where Den contributes</h3>
+        <div class="tags">
+          <span class="tag">Production services</span>
+          <span class="tag">Migration programmes</span>
+          <span class="tag">Major incident management</span>
+          <span class="tag">Service restoration</span>
+        </div>
+      </div>
+      <div class="card reveal d2">
+        <span class="num">Stakeholders</span>
+        <h3>Who Den communicates with</h3>
+        <div class="tags">
+          <span class="tag">Global technology stakeholders</span>
+          <span class="tag">Cross-regional teams</span>
+          <span class="tag">Engineering peers</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     06 — LEADERSHIP
+     ============================================================ -->
+<section id="leadership">
+  <div class="wrap">
+    <p class="label reveal">06 — Leadership</p>
+    <h2 class="title reveal d1">Leadership Without Dependence <span class="accent">on Hierarchy</span></h2>
+    <p class="lead reveal d2">
+      The feedback describes leadership expressed through technical credibility, capability building and
+      influence — demonstrated through what is delivered and what others become able to do.
+    </p>
+
+    <div class="grid g3" style="margin-top:clamp(30px,5vw,46px)">
+      <article class="card pillar reveal">
+        <span class="pnum">01</span>
+        <h3>Lead by Solving</h3>
+        <p>Demonstrate practical solutions. Credibility is built by solving the problem in front of the team, in production, with something that works.</p>
+        <div class="pline"></div>
+      </article>
+      <article class="card pillar reveal d1">
+        <span class="pnum">02</span>
+        <h3>Lead by Teaching</h3>
+        <p>Share knowledge rather than keeping expertise concentrated. Advice, troubleshooting support and technical guidance are given generously.</p>
+        <div class="pline"></div>
+      </article>
+      <article class="card pillar reveal d2">
+        <span class="pnum">03</span>
+        <h3>Lead by Documenting</h3>
+        <p>Make knowledge accessible. Documentation is produced frequently and at a high standard so that understanding is not locked inside one person.</p>
+        <div class="pline"></div>
+      </article>
+      <article class="card pillar reveal d1">
+        <span class="pnum">04</span>
+        <h3>Lead by Enabling</h3>
+        <p>Create tools and automation that help others work faster and more consistently — capability that is handed over, not retained.</p>
+        <div class="pline"></div>
+      </article>
+      <article class="card pillar reveal d2">
+        <span class="pnum">05</span>
+        <h3>Lead by Connecting</h3>
+        <p>Connect people, teams and expertise. Reviewers describe Den directing colleagues to the right specialists rather than holding the bottleneck.</p>
+        <div class="pline"></div>
+      </article>
+      <article class="card pillar reveal d3" style="display:flex;align-items:center;background:linear-gradient(150deg,rgba(75,123,255,.14),rgba(58,210,230,.05));border-color:rgba(75,123,255,.28)">
+        <p style="color:#dbe4f5;font-size:.95rem;line-height:1.55">
+          Technical leadership does not always require formal authority. It can also emerge through
+          expertise, trust, reliability, knowledge sharing and the ability to make other people more effective.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     07 — KNOWLEDGE
+     ============================================================ -->
+<section id="knowledge">
+  <div class="wrap">
+    <p class="label reveal">07 — Knowledge</p>
+    <h2 class="title reveal d1">Knowledge That <span class="accent">Doesn't Disappear</span></h2>
+    <p class="lead reveal d2">
+      The feedback describes Den as writing documentation frequently and at a high standard.
+      It is not written as an obligation — it is written so that the next person does not have to
+      rediscover the same system.
+    </p>
+
+    <div class="grid g2" style="margin-top:clamp(30px,5vw,46px)">
+      <div class="card reveal">
+        <span class="num">What the documentation contains</span>
+        <h3>Structure, not just notes</h3>
+        <p>Reviewers describe documentation that is clear, concise, step-by-step and easy to understand.</p>
+        <div class="tags">
+          <span class="tag">Tables</span>
+          <span class="tag">Screenshots</span>
+          <span class="tag">Explanations</span>
+          <span class="tag">System configuration</span>
+          <span class="tag">Architecture &amp; context</span>
+          <span class="tag">Troubleshooting</span>
+          <span class="tag">Step-by-step procedures</span>
+          <span class="tag">General guidance</span>
+        </div>
+      </div>
+
+      <div class="card reveal d1">
+        <span class="num">Why it matters</span>
+        <h3>Documentation as an organisational asset</h3>
+        <p>
+          The supplied feedback describes Den's documentation becoming an organisational asset.
+          It is useful for understanding system setup, configuration and operations — and it remains
+          useful long after the original task is closed.
+        </p>
+        <details class="evidence">
+          <summary>See supporting feedback theme</summary>
+          <div class="ev-body">
+            Reviewers described a high volume of documentation, characterised as clear, concise,
+            step-by-step and easy to understand, with extensive use of tables and screenshots.
+            It was described as helping others understand system setup, configuration and operations.
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <div class="subhead reveal">The knowledge chain</div>
+    <ol class="vchain reveal d1">
+      <li><strong>Individual knowledge</strong> — what one person understands</li>
+      <li><strong>Documented knowledge</strong> — what has been written down clearly</li>
+      <li><strong>Shared knowledge</strong> — what other people can actually use</li>
+      <li><strong>Organisational capability</strong> — what the team can now do without the original author</li>
+    </ol>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     08 — AUTOMATION
+     ============================================================ -->
+<section id="automation">
+  <div class="wrap">
+    <p class="label reveal">08 — Automation</p>
+    <h2 class="title reveal d1">From Manual Work to <span class="accent">Engineered Capability</span></h2>
+    <p class="lead reveal d2">
+      Automation is the strongest recurring theme in the supplied feedback. It is described not as a
+      one-off effort but as a delivery discipline — production automation, SRE automation, process
+      improvement and operational efficiency appearing repeatedly across reviewer observations.
+    </p>
+
+    <div class="hflow reveal d2">
+      <span class="step">Manual process</span><span class="arw" aria-hidden="true">→</span>
+      <span class="step">Automation</span><span class="arw" aria-hidden="true">→</span>
+      <span class="step">Repeatability</span><span class="arw" aria-hidden="true">→</span>
+      <span class="step">Consistency</span><span class="arw" aria-hidden="true">→</span>
+      <span class="step">Observability</span><span class="arw" aria-hidden="true">→</span>
+      <span class="step">Scalability</span>
+    </div>
+
+    <div class="grid g3" style="margin-top:clamp(30px,5vw,46px)">
+      <div class="card reveal">
+        <h3>Repeatability</h3>
+        <p>An automated process runs the same way every time, regardless of who is on shift or how busy the day is.</p>
+      </div>
+      <div class="card reveal d1">
+        <h3>Operational efficiency</h3>
+        <p>Manual effort is removed from routine work, releasing time for engineering and problem solving.</p>
+      </div>
+      <div class="card reveal d2">
+        <h3>Delivery</h3>
+        <p>Reviewers describe multiple automation deliveries and automation initiatives delivered into production.</p>
+      </div>
+    </div>
+
+    <div class="callout reveal d2">
+      <span class="k">Reported in 360 feedback</span>
+      <p>
+        One reviewer described Den as the highest achiever in the team for production automation delivery.
+        This is a reviewer observation reproduced from the supplied feedback and is not an independently
+        verified measurement. No automation counts or return-on-investment figures are stated in the
+        source material, and none are invented here.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     09 — OBSERVABILITY
+     ============================================================ -->
+<section id="observability">
+  <div class="wrap">
+    <p class="label reveal">09 — Observability</p>
+    <h2 class="title reveal d1">Make the System <span class="accent">Visible</span></h2>
+    <p class="lead reveal d2">
+      Building something is only half of the work. The feedback describes contributions to telemetry,
+      observability, metrics, monitoring, proactive alerts and reporting — so that the state of a system
+      is known before it becomes a conversation about an outage.
+    </p>
+
+    <ol class="vchain reveal d2">
+      <li><strong>System</strong> — the platform and its components</li>
+      <li><strong>Data</strong> — events, logs and signals emitted in operation</li>
+      <li><strong>Metrics</strong> — measures that describe behaviour over time</li>
+      <li><strong>Visibility</strong> — a view that people can actually interpret</li>
+      <li><strong>Alerting</strong> — proactive notification before impact</li>
+      <li><strong>Action</strong> — intervention driven by evidence</li>
+      <li><strong>Improvement</strong> — the system changes because it was observed</li>
+    </ol>
+
+    <div class="callout reveal d2">
+      <span class="k">Reported in 360 feedback</span>
+      <p>
+        Reviewers described work on a reporting framework as an example of observability contribution —
+        turning system data into something operationally useful. The feedback also describes involvement
+        in SRE capability development across automation, telemetry, observability, metrics, monitoring,
+        reporting and proactive alerts.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     10 — PROBLEM SOLVING
+     ============================================================ -->
+<section id="problems">
+  <div class="wrap">
+    <p class="label reveal">10 — Problem Solving</p>
+    <h2 class="title reveal d1">How Complex Problems Become <span class="accent">Practical Solutions</span></h2>
+    <p class="lead reveal d2">
+      The feedback describes a special ability to approach and analyse problems: rooting out causes,
+      identifying appropriate solutions, and solving problems in a timely manner.
+    </p>
+
+    <ol class="vchain reveal d2">
+      <li><strong>Problem</strong> — the visible symptom as reported</li>
+      <li><strong>Investigation</strong> — structured analysis of the environment</li>
+      <li><strong>Root Cause</strong> — the underlying reason, not the first plausible explanation</li>
+      <li><strong>Design</strong> — a solution shaped by the real constraints</li>
+      <li><strong>Implementation</strong> — engineering the change into production</li>
+      <li><strong>Automation</strong> — removing the manual element that allowed recurrence</li>
+      <li><strong>Monitoring</strong> — making the outcome observable</li>
+      <li><strong>Documentation</strong> — recording what was learned</li>
+      <li><strong>Knowledge Transfer</strong> — enabling others to handle it next time</li>
+    </ol>
+
+    <div class="callout reveal d2">
+      <span class="k">Reported in 360 feedback</span>
+      <p>
+        Reviewers described Den as good at rooting out causes, identifying appropriate solutions and
+        solving problems in a timely manner — with a consistent emphasis on understanding the problem
+        before applying the fix.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     11 — ARCHITECTURE
+     ============================================================ -->
+<section id="architecture">
+  <div class="wrap">
+    <p class="label reveal">11 — Architecture</p>
+    <h2 class="title reveal d1">From Incident to <span class="accent">Architecture</span></h2>
+    <p class="lead reveal d2">
+      One reviewer described exceptional technical leadership in platform architecture decisions.
+      The example supplied involved a performance bottleneck addressed through a scalable
+      microservices solution.
+    </p>
+
+    <div class="card reveal d2" style="border-color:rgba(145,121,255,.3);background:linear-gradient(150deg,rgba(145,121,255,.09),rgba(75,123,255,.05))">
+      <span class="k" style="display:block;font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:#b9a8ff;font-weight:700;margin-bottom:14px;">
+        Reported Reviewer Example
+      </span>
+      <h3 style="font-size:clamp(1.05rem,3.2vw,1.25rem);color:#fff;font-weight:650;">
+        Performance bottleneck addressed through a scalable microservices solution
+      </h3>
+
+      <div class="grid g3" style="margin-top:20px">
+        <div>
+          <div style="font-size:clamp(1.8rem,7vw,2.4rem);font-weight:750;letter-spacing:-.03em;color:#fff;line-height:1;">40%</div>
+          <div style="margin-top:8px;font-size:.8rem;color:var(--dim);">reduction in latency</div>
+        </div>
+        <div>
+          <div style="font-size:clamp(1.8rem,7vw,2.4rem);font-weight:750;letter-spacing:-.03em;color:#fff;line-height:1;">3×</div>
+          <div style="margin-top:8px;font-size:.8rem;color:var(--dim);">transaction volume capability</div>
+        </div>
+        <div>
+          <div style="font-size:clamp(1.8rem,7vw,2.4rem);font-weight:750;letter-spacing:-.03em;color:#fff;line-height:1;">↑</div>
+          <div style="margin-top:8px;font-size:.8rem;color:var(--dim);">improved client satisfaction</div>
+        </div>
+      </div>
+
+      <p style="margin-top:22px;font-size:.84rem;color:var(--mute);border-top:1px solid var(--line);padding-top:16px;">
+        These quantitative figures are reproduced from the supplied 360-feedback narrative and are not
+        independently verified within this profile. They are presented as a reviewer-reported example,
+        not as audited measurements.
+      </p>
+    </div>
+
+    <div class="grid g3" style="margin-top:clamp(26px,4vw,38px)">
+      <div class="card reveal">
+        <h3>Design under constraint</h3>
+        <p>Architecture decisions are described as grounded in the real operating environment rather than theoretical preference.</p>
+      </div>
+      <div class="card reveal d1">
+        <h3>Scalability</h3>
+        <p>The reviewer example centres on a solution designed to handle growth rather than simply relieve current pressure.</p>
+      </div>
+      <div class="card reveal d2">
+        <h3>Leadership in decisions</h3>
+        <p>Technical leadership described at the point where platform architecture decisions are actually made.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     12 — COMMUNICATION
+     ============================================================ -->
+<section id="communication">
+  <div class="wrap">
+    <p class="label reveal">12 — Communication</p>
+    <h2 class="title reveal d1">Making Complex Technology <span class="accent">Understandable</span></h2>
+    <p class="lead reveal d2">
+      Communication is treated as an engineering output, not an afterthought. The feedback highlights
+      clear technical explanations, concise presentations, SRE presentations, technical documentation
+      and stakeholder communication — in English and Japanese, across regions.
+    </p>
+
+    <div class="hflow reveal d2">
+      <span class="step">Complex system</span><span class="arw" aria-hidden="true">→</span>
+      <span class="step">Structured explanation</span><span class="arw" aria-hidden="true">→</span>
+      <span class="step">Clear documentation</span><span class="arw" aria-hidden="true">→</span>
+      <span class="step">Shared understanding</span><span class="arw" aria-hidden="true">→</span>
+      <span class="step">Better execution</span>
+    </div>
+
+    <div class="grid g3" style="margin-top:clamp(30px,5vw,46px)">
+      <div class="card reveal">
+        <h3>Explaining</h3>
+        <p>Clear technical explanations that make complex systems understandable to people with different levels of context.</p>
+      </div>
+      <div class="card reveal d1">
+        <h3>Presenting</h3>
+        <p>Concise presentations, including SRE presentations, delivered to stakeholders and technical audiences.</p>
+      </div>
+      <div class="card reveal d2">
+        <h3>Understanding requirements</h3>
+        <p>Feedback highlights requirement understanding — listening for what is actually needed before proposing a solution.</p>
+      </div>
+      <div class="card reveal d1">
+        <h3>English</h3>
+        <p>Strong English communication described across regional and global teams.</p>
+      </div>
+      <div class="card reveal d2">
+        <h3>Japanese</h3>
+        <p>Japanese communication described as part of effective cross-regional collaboration.</p>
+      </div>
+      <div class="card reveal d3">
+        <h3>Stakeholders</h3>
+        <p>Communication that works across technical peers, global stakeholders and cross-regional teams.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     13 — MENTORING
+     ============================================================ -->
+<section id="mentoring">
+  <div class="wrap">
+    <p class="label reveal">13 — Mentoring</p>
+    <h2 class="title reveal d1">Knowledge <span class="accent">Multiplication</span></h2>
+    <p class="lead reveal d2">
+      Colleagues describe Den as approachable and willing to help — providing advice, guidance,
+      troubleshooting support, PowerShell assistance, SQL assistance, SRE knowledge and connections
+      to other experts.
+    </p>
+
+    <div class="grid g2" style="margin-top:clamp(30px,5vw,46px)">
+      <div class="card reveal">
+        <span class="num">Not the bottleneck</span>
+        <h3>The goal is not to become the person everyone depends on</h3>
+        <p>
+          Knowledge concentration is a risk to a team. The approach described in the feedback is the
+          opposite: distribute capability so that more people can solve more problems.
+        </p>
+      </div>
+      <div class="card reveal d1" style="border-color:rgba(58,210,230,.28);background:linear-gradient(150deg,rgba(58,210,230,.09),rgba(75,123,255,.05))">
+        <span class="num" style="color:var(--cyan)">The objective</span>
+        <h3>The goal is to help other people become more capable</h3>
+        <p>Mentoring, advice and knowledge sharing are treated as part of the engineering work itself.</p>
+      </div>
+    </div>
+
+    <div class="pull cyan reveal d2">
+      Expertise that stays with one person is a single point of failure. Expertise that is shared
+      becomes team capability.
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     14 — CONTINUOUS LEARNING
+     ============================================================ -->
+<section id="learning">
+  <div class="wrap">
+    <p class="label reveal">14 — Development</p>
+    <h2 class="title reveal d1">Continuous <span class="accent">Learning</span></h2>
+    <p class="lead reveal d2">
+      The supplied feedback identifies professional development as an active and deliberate part of
+      Den's practice, not a background activity.
+    </p>
+
+    <div class="card reveal d2" style="margin-top:clamp(30px,5vw,46px);border-color:rgba(75,123,255,.28)">
+      <span class="num">Certification referenced in feedback</span>
+      <h3 style="font-size:clamp(1.05rem,3.4vw,1.35rem);">SRE Architect Certification</h3>
+      <p style="margin-top:12px;">
+        The reviewer identified the SRE Architect certification as evidence of Den's commitment to
+        continuous learning and professional development — describing it in the context of dedication,
+        strategic planning and the ability to execute challenging goals.
+      </p>
+      <p style="margin-top:14px;font-size:.84rem;color:var(--mute);">
+        Only what the supplied feedback supports is stated here. Certification provider, date, level,
+        score and examination details are not included because they were not supplied.
+      </p>
+    </div>
+
+    <div class="grid g3" style="margin-top:clamp(24px,4vw,36px)">
+      <div class="card reveal">
+        <h3>Continuous learning</h3>
+        <p>Ongoing development treated as part of professional practice rather than a periodic obligation.</p>
+      </div>
+      <div class="card reveal d1">
+        <h3>Dedication</h3>
+        <p>Reviewer-described commitment to completing demanding goals alongside day-to-day delivery.</p>
+      </div>
+      <div class="card reveal d2">
+        <h3>Strategic planning</h3>
+        <p>Development connected to a longer-term direction for SRE practice and engineering capability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     15 — IMPACT DASHBOARD
+     ============================================================ -->
+<section id="impact">
+  <div class="wrap">
+    <p class="label reveal">15 — Impact</p>
+    <h2 class="title reveal d1">Impact <span class="accent">Themes</span></h2>
+    <p class="lead reveal d2">
+      Six recurring themes appear across the supplied feedback. No numerical scores are assigned here —
+      the themes are presented as themes.
+    </p>
+
+    <div class="grid g3" style="margin-top:clamp(30px,5vw,46px)">
+      <article class="card impact-card reveal">
+        <div class="ik"></div>
+        <h3>Automation</h3>
+        <p>Production automation and operational efficiency — consistently the most frequently cited theme.</p>
+      </article>
+      <article class="card impact-card reveal d1">
+        <div class="ik"></div>
+        <h3>Reliability</h3>
+        <p>SRE practice, observability and proactive monitoring, contributing to service stability.</p>
+      </article>
+      <article class="card impact-card reveal d2">
+        <div class="ik"></div>
+        <h3>Knowledge</h3>
+        <p>Documentation and knowledge sharing that turns individual understanding into team capability.</p>
+      </article>
+      <article class="card impact-card reveal d1">
+        <div class="ik"></div>
+        <h3>Global</h3>
+        <p>Cross-regional collaboration across infrastructure, workspace operations and engineering teams.</p>
+      </article>
+      <article class="card impact-card reveal d2">
+        <div class="ik"></div>
+        <h3>Strategy</h3>
+        <p>Planning, project structure and architectural thinking applied before and during delivery.</p>
+      </article>
+      <article class="card impact-card reveal d3">
+        <div class="ik"></div>
+        <h3>Enablement</h3>
+        <p>Mentoring and technical guidance that raises the capability of the people around him.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     16 — THE TECHNICAL MULTIPLIER
+     ============================================================ -->
+<section id="multiplier">
+  <div class="wrap">
+    <p class="label reveal">16 — Centrepiece</p>
+    <h2 class="title reveal d1">The Technical <span class="accent">Multiplier</span></h2>
+    <p class="lead reveal d2">
+      The central idea running through the entire feedback: value is not limited to what one person
+      builds. It is the capability that remains in the team after the work is finished.
+    </p>
+
+    <div class="mult">
+      <div class="mult-step reveal">
+        <span class="mi">01</span>
+        <span class="mt">Individual expertise</span>
+        <span class="ms">Deep knowledge of systems, platforms and failure modes</span>
+      </div>
+      <div class="mult-step reveal d1">
+        <span class="mi">02</span>
+        <span class="mt">Engineering solution</span>
+        <span class="ms">Understanding converted into something that runs in production</span>
+      </div>
+      <div class="mult-step reveal d1">
+        <span class="mi">03</span>
+        <span class="mt">Automation</span>
+        <span class="ms">The manual step removed and the outcome made repeatable</span>
+      </div>
+      <div class="mult-step reveal d2">
+        <span class="mi">04</span>
+        <span class="mt">Observability</span>
+        <span class="ms">The system made visible, measurable and alertable</span>
+      </div>
+      <div class="mult-step reveal d2">
+        <span class="mi">05</span>
+        <span class="mt">Documentation</span>
+        <span class="ms">What was learned captured in a form others can use</span>
+      </div>
+      <div class="mult-step reveal d3">
+        <span class="mi">06</span>
+        <span class="mt">Knowledge sharing</span>
+        <span class="ms">Understanding transferred to colleagues</span>
+      </div>
+      <div class="mult-step reveal d3">
+        <span class="mi">07</span>
+        <span class="mt">Team capability</span>
+        <span class="ms">More people able to solve more problems</span>
+      </div>
+
+      <div class="mult-final reveal d3">
+        <div class="k">Outcome</div>
+        <div class="v">Organisational Capability</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     17 — SIGNATURE
+     ============================================================ -->
+<section id="signature">
+  <div class="wrap">
+    <p class="label reveal">17 — Operating Principle</p>
+
+    <div class="signature reveal d1">
+      <blockquote>
+        Solve the problem properly, automate what should not remain manual, make the result observable,
+        document what was learned, and leave the next person in a better position than you found them.
+      </blockquote>
+      <div class="sig-label">Professional operating principle derived from the feedback</div>
+    </div>
+
+    <div class="onesentence reveal d2">
+      <p>
+        Den is a <strong>technically deep, strategically minded SRE and technology professional</strong>
+        who turns complex operational problems into scalable engineering solutions, then makes those
+        solutions durable through <strong>automation</strong>, <strong>observability</strong>,
+        <strong>documentation</strong> and <strong>knowledge sharing</strong>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     18 — PORTRAIT
+     ============================================================ -->
+<section id="portrait">
+  <div class="wrap">
+    <p class="label reveal">18 — Synthesis</p>
+    <h2 class="title reveal d1">The Professional <span class="accent">Portrait</span></h2>
+
+    <p class="lead reveal d2">
+      The strongest pattern in the supplied feedback is not any single compliment. It is the
+      consistency across multiple reviewers — the same qualities described from different
+      vantage points, by people working in different teams and different regions.
+    </p>
+
+    <div class="themes reveal d2">
+      <span class="theme">Analytical</span>
+      <span class="theme">Technical</span>
+      <span class="theme">Strategic</span>
+      <span class="theme">Reliable</span>
+      <span class="theme">Approachable</span>
+      <span class="theme">Automation-oriented</span>
+      <span class="theme">Documentation-driven</span>
+      <span class="theme">Collaborative</span>
+      <span class="theme">Global</span>
+      <span class="theme">SRE-minded</span>
+      <span class="theme">Knowledge-sharing</span>
+      <span class="theme">Architecture-aware</span>
+    </div>
+
+    <div class="callout reveal d3">
+      <span class="k">The recurring description</span>
+      <p>
+        Across the feedback, reviewers repeatedly describe a professional who understands complex
+        technology environments, identifies opportunities for improvement, engineers practical solutions,
+        automates repetitive work, makes systems observable, documents what matters, and shares knowledge
+        so the capability becomes part of the organisation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     19 — WHAT PEOPLE RELY ON DEN FOR
+     ============================================================ -->
+<section id="reliance">
+  <div class="wrap">
+    <p class="label reveal">19 — Reliance Map</p>
+    <h2 class="title reveal d1">What People Rely <span class="accent">on Den For</span></h2>
+    <p class="lead reveal d2">
+      Twelve capability areas drawn from the supplied feedback. Tap any tile to see the associated
+      context.
+    </p>
+
+    <div class="tiles reveal d2" id="tiles">
+      <button class="tile" aria-expanded="false">
+        <span class="tk">Problem Solving</span>
+        <span class="tv">Root-cause analysis and practical solutions — approaching problems analytically and resolving them in a timely manner.</span>
+      </button>
+      <button class="tile" aria-expanded="false">
+        <span class="tk">Automation</span>
+        <span class="tv">PowerShell, SRE automation and operational tooling delivered into production environments.</span>
+      </button>
+      <button class="tile" aria-expanded="false">
+        <span class="tk">Windows</span>
+        <span class="tv">Platform and endpoint expertise across Windows technology and related operational platforms.</span>
+      </button>
+      <button class="tile" aria-expanded="false">
+        <span class="tk">SRE</span>
+        <span class="tv">Automation, observability and engineering practices applied to service reliability.</span>
+      </button>
+      <button class="tile" aria-expanded="false">
+        <span class="tk">Documentation</span>
+        <span class="tv">Clear system and process knowledge — structured, visual and reusable across the team.</span>
+      </button>
+      <button class="tile" aria-expanded="false">
+        <span class="tk">Troubleshooting</span>
+        <span class="tv">Practical technical guidance during investigation and resolution of live issues.</span>
+      </button>
+      <button class="tile" aria-expanded="false">
+        <span class="tk">Architecture</span>
+        <span class="tv">Technical design and platform decisions, including reviewer-described leadership in architecture decisions.</span>
+      </button>
+      <button class="tile" aria-expanded="false">
+        <span class="tk">Migration</span>
+        <span class="tv">Technical execution and operational support across migration programmes.</span>
+      </button>
+      <button class="tile" aria-expanded="false">
+        <span class="tk">Observability</span>
+        <span class="tv">Metrics, telemetry, monitoring, reporting and proactive alerting.</span>
+      </button>
+      <button class="tile" aria-expanded="false">
+        <span class="tk">Communication</span>
+        <span class="tv">Clear technical explanations in English and Japanese, across regional and global audiences.</span>
+      </button>
+      <button class="tile" aria-expanded="false">
+        <span class="tk">Mentoring</span>
+        <span class="tv">Advice, guidance, troubleshooting support and connection to the right expertise.</span>
+      </button>
+      <button class="tile" aria-expanded="false">
+        <span class="tk">Global Collaboration</span>
+        <span class="tv">Cross-region coordination and technical partnership across infrastructure, workspace and engineering teams.</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     20 — THE NEXT EVOLUTION
+     ============================================================ -->
+<section id="evolution">
+  <div class="wrap">
+    <p class="label reveal">20 — Direction</p>
+    <h2 class="title reveal d1">The Next <span class="accent">Evolution</span></h2>
+    <p class="lead reveal d2">
+      The feedback identifies opportunities that are expansions of existing strengths — directions
+      that extend work already being done, rather than correct deficiencies.
+    </p>
+
+    <div class="acc-list">
+      <details class="acc reveal">
+        <summary><span class="acc-num">01</span><span class="acc-title">Formal SRE Strategy</span></summary>
+        <div class="acc-body">
+          <p>
+            Use existing automation and engineering experience to help shape broader SRE direction —
+            moving from delivering SRE capability to contributing to how that capability is defined
+            and prioritised.
+          </p>
+        </div>
+      </details>
+
+      <details class="acc reveal d1">
+        <summary><span class="acc-num">02</span><span class="acc-title">Mentoring</span></summary>
+        <div class="acc-body">
+          <p>
+            Multiply technical capability through structured knowledge sharing — building on mentoring
+            that already happens informally and making it more systematic.
+          </p>
+        </div>
+      </details>
+
+      <details class="acc reveal d2">
+        <summary><span class="acc-num">03</span><span class="acc-title">Organisational Visibility</span></summary>
+        <div class="acc-body">
+          <p>
+            Make successful technical work visible beyond the immediate team, so that the value of
+            automation, observability and documentation work is understood more widely.
+          </p>
+        </div>
+      </details>
+
+      <details class="acc reveal">
+        <summary><span class="acc-num">04</span><span class="acc-title">Knowledge Leadership</span></summary>
+        <div class="acc-body">
+          <p>
+            Share technical practices through internal knowledge-sharing channels — extending
+            documentation and presentations beyond immediate delivery needs.
+          </p>
+        </div>
+      </details>
+
+      <details class="acc reveal d1">
+        <summary><span class="acc-num">05</span><span class="acc-title">Broader Technical Influence</span></summary>
+        <div class="acc-body">
+          <p>
+            Extend technical expertise into wider organisational initiatives, building on established
+            cross-regional collaboration and architecture involvement.
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <p class="note reveal d2">
+      Framing note: these are described as expansions of existing strengths identified in the feedback.
+      They are not presented as weaknesses or performance gaps.
+    </p>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============================================================
+     21 — CTA
+     ============================================================ -->
+<section class="cta" id="contact">
+  <div class="wrap">
+    <h2 class="reveal">DEN SANCHEZ</h2>
+    <p class="cta-sub reveal d1">Technical Leadership • SRE • Automation • Global Technology Operations</p>
+    <p class="cta-line reveal d2">
+      Technical problems become more valuable when the solution survives the person who created it.
+    </p>
+    <a class="mail-btn reveal d3" href="mailto:densanchez@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+        <path d="m22 6-10 7L2 6"></path>
+      </svg>
+      densanchez@gmail.com
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-title">Den Sanchez — Professional Capability &amp; Leadership Profile</div>
+        <p class="foot-line">A synthesis of supplied 360-degree feedback.</p>
+        <p class="foot-line">Single-file offline professional profile.</p>
+      </div>
+      <div class="methodology">
+        <div class="mk">About this profile</div>
+        <p>
+          This profile synthesises 360-degree feedback supplied by Den Sanchez. It represents the
+          perceptions and observations contained in that feedback. Quantitative examples supplied by
+          individual reviewers are explicitly identified as reported reviewer claims rather than
+          independently verified measurements.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ----------------------------------------------------------
+     1. SCROLL PROGRESS
+     ---------------------------------------------------------- */
+  var progress = document.getElementById("progress");
+  function updateProgress(){
+    var doc = document.documentElement;
+    var max = doc.scrollHeight - window.innerHeight;
+    var p = max > 0 ? (window.scrollY || doc.scrollTop) / max : 0;
+    if (p < 0) p = 0; if (p > 1) p = 1;
+    progress.style.width = (p * 100).toFixed(2) + "%";
+  }
+  window.addEventListener("scroll", updateProgress, { passive: true });
+  window.addEventListener("resize", updateProgress);
+  updateProgress();
+
+  /* ----------------------------------------------------------
+     2. REVEAL ON SCROLL
+     ---------------------------------------------------------- */
+  var reveals = Array.prototype.slice.call(document.querySelectorAll(".reveal"));
+  function showAll(){ reveals.forEach(function(el){ el.classList.add("in"); }); }
+
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    showAll();
+  } else {
+    var revObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) {
+          e.target.classList.add("in");
+          revObs.unobserve(e.target);
+        }
+      });
+    }, { rootMargin: "0px 0px -6% 0px", threshold: 0.08 });
+    reveals.forEach(function(el){ revObs.observe(el); });
+  }
+
+  /* ----------------------------------------------------------
+     3. NUMBER COUNTERS
+     ---------------------------------------------------------- */
+  function animateCount(el){
+    var target = parseFloat(el.getAttribute("data-count"));
+    var dec = parseInt(el.getAttribute("data-decimals") || "0", 10);
+    if (isNaN(target)) return;
+
+    if (reduceMotion) { el.textContent = target.toFixed(dec); return; }
+
+    var duration = 1500;
+    var start = null;
+
+    function frame(ts){
+      if (start === null) start = ts;
+      var t = Math.min(1, (ts - start) / duration);
+      var eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = (target * eased).toFixed(dec);
+      if (t < 1) requestAnimationFrame(frame);
+      else el.textContent = target.toFixed(dec);
+    }
+    requestAnimationFrame(frame);
+  }
+
+  var counters = Array.prototype.slice.call(document.querySelectorAll(".count"));
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    counters.forEach(animateCount);
+  } else {
+    var cObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) {
+          animateCount(e.target);
+          cObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    counters.forEach(function(el){ cObs.observe(el); });
+  }
+
+  /* ----------------------------------------------------------
+     4. RING + BARS
+     ---------------------------------------------------------- */
+  var R = 70;
+  var CIRC = 2 * Math.PI * R;
+  var ringVal = document.getElementById("ringVal");
+  if (ringVal) {
+    ringVal.style.strokeDasharray = CIRC.toFixed(2);
+    ringVal.style.strokeDashoffset = CIRC.toFixed(2);
+  }
+
+  function fillRing(){
+    if (!ringVal) return;
+    var frac = 4.25 / 5;
+    ringVal.style.strokeDashoffset = (CIRC * (1 - frac)).toFixed(2);
+  }
+
+  function fillBars(){
+    var rows = document.querySelectorAll(".bar-row");
+    Array.prototype.forEach.call(rows, function(row, i){
+      var v = parseFloat(row.getAttribute("data-bar")) || 0;
+      var fill = row.querySelector(".bar-fill");
+      if (!fill) return;
+      var pct = (v / 5) * 100;
+      var delay = reduceMotion ? 0 : i * 90;
+      setTimeout(function(){ fill.style.width = pct.toFixed(2) + "%"; }, delay);
+    });
+  }
+
+  var barsBlock = document.getElementById("barsBlock");
+  var dashFired = false;
+  function fireDashboard(){
+    if (dashFired) return;
+    dashFired = true;
+    fillRing();
+    fillBars();
+  }
+  if (barsBlock && "IntersectionObserver" in window && !reduceMotion) {
+    var dObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting) { fireDashboard(); dObs.disconnect(); } });
+    }, { threshold: 0.25 });
+    dObs.observe(barsBlock);
+  } else {
+    fireDashboard();
+  }
+
+  /* ----------------------------------------------------------
+     5. RADAR CHART
+     ---------------------------------------------------------- */
+  (function buildRadar(){
+    var svg = document.getElementById("radar");
+    if (!svg) return;
+
+    var data = [
+      { label: "Explore Insights\n& Visions", v: 4.45 },
+      { label: "Make Strategic\nDecisions",   v: 4.55 },
+      { label: "Inclusion",                   v: 4.09 },
+      { label: "Inspire\nEntrepreneurship",   v: 4.09 },
+      { label: "Elevate Org.\nObjectives",    v: 4.09 }
+    ];
+
+    var cx = 160, cy = 140, R = 96;
+    var NS = "http://www.w3.org/2000/svg";
+    function mk(tag, attrs){
+      var el = document.createElementNS(NS, tag);
+      for (var k in attrs) { if (Object.prototype.hasOwnProperty.call(attrs, k)) el.setAttribute(k, attrs[k]); }
+      return el;
+    }
+    function pt(i, r){
+      var a = (-90 + i * 72) * Math.PI / 180;
+      return [cx + Math.cos(a) * r, cy + Math.sin(a) * r];
+    }
+
+    // grid rings
+    [0.2, 0.4, 0.6, 0.8, 1].forEach(function(f){
+      var d = "";
+      for (var i = 0; i < 5; i++){
+        var p = pt(i, R * f);
+        d += (i === 0 ? "M" : "L") + p[0].toFixed(1) + "," + p[1].toFixed(1) + " ";
+      }
+      d += "Z";
+      svg.appendChild(mk("path", { d: d, "class": "grid-line" }));
+    });
+
+    // axes
+    for (var i = 0; i < 5; i++){
+      var p = pt(i, R);
+      svg.appendChild(mk("line", {
+        x1: cx, y1: cy, x2: p[0].toFixed(1), y2: p[1].toFixed(1), "class": "axis"
+      }));
+    }
+
+    // data shape
+    var dpath = "";
+    for (var j = 0; j < 5; j++){
+      var r = (data[j].v / 5) * R;
+      var q = pt(j, r);
+      dpath += (j === 0 ? "M" : "L") + q[0].toFixed(1) + "," + q[1].toFixed(1) + " ";
+    }
+    dpath += "Z";
+
+    var shape = mk("path", { d: dpath, "class": "shape" });
+    svg.appendChild(shape);
+
+    // points
+    for (var k = 0; k < 5; k++){
+      var rr = (data[k].v / 5) * R;
+      var pq = pt(k, rr);
+      svg.appendChild(mk("circle", { cx: pq[0].toFixed(1), cy: pq[1].toFixed(1), r: 2.6, "class": "pt" }));
+    }
+
+    // labels
+    for (var m = 0; m < 5; m++){
+      var pl = pt(m, R + 26);
+      var lines = data[m].label.split("\n");
+      var t = mk("text", {
+        x: pl[0].toFixed(1),
+        y: (pl[1] - (lines.length - 1) * 5).toFixed(1),
+        "class": "ax-label",
+        "text-anchor": "middle"
+      });
+      lines.forEach(function(line, idx){
+        var ts = mk("tspan", {
+          x: pl[0].toFixed(1),
+          dy: idx === 0 ? "0" : "11"
+        });
+        ts.textContent = line;
+        t.appendChild(ts);
+      });
+      svg.appendChild(t);
+    }
+
+    // fade in
+    if (!reduceMotion){
+      shape.style.opacity = "0";
+      if ("IntersectionObserver" in window){
+        var rObs = new IntersectionObserver(function(entries){
+          entries.forEach(function(e){
+            if (e.isIntersecting){
+              shape.style.opacity = "1";
+              rObs.disconnect();
+            }
+          });
+        }, { threshold: 0.3 });
+        rObs.observe(svg);
+      } else {
+        shape.style.opacity = "1";
+      }
+    }
+  })();
+
+  /* ----------------------------------------------------------
+     6. HERO CHAIN
+     ---------------------------------------------------------- */
+  (function heroChain(){
+    var stages = [
+      { k: "01 — Understand", v: "Start with the underlying problem, not the visible symptom. Structured investigation, decomposition, and an understanding of how the system actually behaves." },
+      { k: "02 — Analyse",    v: "Break the problem into components, identify dependencies, expose constraints, and find the practical solution that holds in production." },
+      { k: "03 — Design",     v: "Turn understanding into an architecture that can carry the load — designed for the real environment, not the ideal one." },
+      { k: "04 — Engineer",   v: "Build the solution with production-grade discipline: PowerShell, Windows and platform engineering, SRE practice and operational tooling." },
+      { k: "05 — Automate",   v: "Remove the manual step and make the outcome repeatable. Automation is the strongest recurring theme in the supplied feedback." },
+      { k: "06 — Observe",    v: "Make the system visible — telemetry, metrics, monitoring, reporting and proactive alerting so problems surface before impact." },
+      { k: "07 — Document",   v: "Capture what was learned so it outlives the moment. Documentation becomes organisational memory." },
+      { k: "08 — Share",      v: "Transfer the capability to other people — mentoring, technical advice, troubleshooting support, and connecting colleagues with expertise." },
+      { k: "09 — Scale",      v: "Convert individual expertise into organisational capability. The measure is what the team can do afterwards." }
+    ];
+
+    var nodes = Array.prototype.slice.call(document.querySelectorAll(".chain-node"));
+    var keyEl = document.getElementById("cdKey");
+    var valEl = document.getElementById("cdVal");
+    var panel = document.getElementById("chainDetail");
+    if (!nodes.length || !keyEl || !valEl) return;
+
+    function select(idx, focus){
+      nodes.forEach(function(n, i){
+        n.setAttribute("aria-selected", i === idx ? "true" : "false");
+      });
+      var data = stages[idx];
+      if (!data) return;
+
+      if (reduceMotion){
+        keyEl.textContent = data.k;
+        valEl.textContent = data.v;
+        return;
+      }
+      panel.classList.add("fading");
+      setTimeout(function(){
+        keyEl.textContent = data.k;
+        valEl.textContent = data.v;
+        panel.classList.remove("fading");
+      }, 180);
+      if (focus) nodes[idx].focus();
+    }
+
+    nodes.forEach(function(n, i){
+      n.addEventListener("click", function(){ select(i); });
+      n.addEventListener("keydown", function(ev){
+        if (ev.key === "ArrowRight" || ev.key === "ArrowDown"){
+          ev.preventDefault();
+          var next = (i + 1) % nodes.length;
+          select(next, true);
+        } else if (ev.key === "ArrowLeft" || ev.key === "ArrowUp"){
+          ev.preventDefault();
+          var prev = (i - 1 + nodes.length) % nodes.length;
+          select(prev, true);
+        }
+      });
+    });
+
+    select(0);
+  })();
+
+  /* ----------------------------------------------------------
+     7. EXPANDABLE CARDS (capability matrix)
+     ---------------------------------------------------------- */
+  Array.prototype.forEach.call(document.querySelectorAll(".cap-head"), function(head){
+    head.addEventListener("click", function(){
+      var id = head.getAttribute("aria-controls");
+      var panel = document.getElementById(id);
+      var open = head.getAttribute("aria-expanded") === "true";
+      head.setAttribute("aria-expanded", open ? "false" : "true");
+      if (panel) panel.classList.toggle("open", !open);
+    });
+  });
+
+  /* ----------------------------------------------------------
+     8. RELIANCE TILES
+     ---------------------------------------------------------- */
+  Array.prototype.forEach.call(document.querySelectorAll("#tiles .tile"), function(tile){
+    tile.addEventListener("click", function(){
+      var open = tile.getAttribute("aria-expanded") === "true";
+      tile.setAttribute("aria-expanded", open ? "false" : "true");
+    });
+  });
+
+  /* ----------------------------------------------------------
+     9. GLOBAL MAP
+     ---------------------------------------------------------- */
+  (function buildMap(){
+    var svg = document.getElementById("mapSvg");
+    if (!svg) return;
+
+    var NS = "http://www.w3.org/2000/svg";
+    function mk(tag, attrs){
+      var el = document.createElementNS(NS, tag);
+      for (var k in attrs) { if (Object.prototype.hasOwnProperty.call(attrs, k)) el.setAttribute(k, attrs[k]); }
+      return el;
+    }
+
+    var W = 720, H = 360;
+
+    function proj(lon, lat){
+      return [ (lon + 180) / 360 * W, (90 - lat) / 180 * H ];
+    }
+
+    // Graticule
+    var g = mk("g", {});
+    for (var lon = -180; lon <= 180; lon += 30){
+      var x = (lon + 180) / 360 * W;
+      g.appendChild(mk("line", {
+        x1: x.toFixed(1), y1: 0, x2: x.toFixed(1), y2: H,
+        "class": (lon === 0 ? "grat-strong" : "grat")
+      }));
+    }
+    for (var lat = -60; lat <= 60; lat += 30){
+      var y = (90 - lat) / 180 * H;
+      g.appendChild(mk("line", {
+        x1: 0, y1: y.toFixed(1), x2: W, y2: y.toFixed(1),
+        "class": (lat === 0 ? "grat-strong" : "grat")
+      }));
+    }
+    svg.appendChild(g);
+
+    var regions = [
+      { name: "United Kingdom", lon: -0.13,  lat: 51.5,  dy: -16 },
+      { name: "India",          lon: 77.6,   lat: 12.97, dy: -16 },
+      { name: "Singapore",      lon: 103.8,  lat: 1.35,  dy: 26 },
+      { name: "Hong Kong",      lon: 114.2,  lat: 22.3,  dy: -16 },
+      { name: "Japan",          lon: 139.7,  lat: 35.7,  dy: -16 },
+      { name: "Australia",      lon: 151.2,  lat: -33.87, dy: 26 }
+    ];
+
+    regions.forEach(function(r){
+      var p = proj(r.lon, r.lat);
+      r.x = p[0];
+      r.y = p[1];
+    });
+
+    var links = [[0,1],[1,2],[2,3],[3,4],[4,5],[2,5],[1,4]];
+
+    var linkGroup = mk("g", {});
+    links.forEach(function(pair){
+      var a = regions[pair[0]], b = regions[pair[1]];
+      var dx = b.x - a.x, dy = b.y - a.y;
+      var dist = Math.sqrt(dx * dx + dy * dy) || 1;
+      var mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+      var off = dist * 0.16;
+      var cx = mx - (dy / dist) * off;
+      var cy = my + (dx / dist) * off;
+      var d = "M" + a.x.toFixed(1) + "," + a.y.toFixed(1) +
+              " Q" + cx.toFixed(1) + "," + cy.toFixed(1) +
+              " " + b.x.toFixed(1) + "," + b.y.toFixed(1);
+      linkGroup.appendChild(mk("path", { d: d, "class": "link" }));
+    });
+    svg.appendChild(linkGroup);
+
+    regions.forEach(function(r, i){
+      var nodeG = mk("g", {});
+
+      var glow = mk("circle", { cx: r.x.toFixed(1), cy: r.y.toFixed(1), r: 13, "class": "marker-glow" });
+      nodeG.appendChild(glow);
+
+      var ring = mk("circle", { cx: r.x.toFixed(1), cy: r.y.toFixed(1), r: 6.5, "class": "marker" });
+      nodeG.appendChild(ring);
+
+      var core = mk("circle", { cx: r.x.toFixed(1), cy: r.y.toFixed(1), r: 2.6, "class": "marker-core" });
+      nodeG.appendChild(core);
+
+      var label = mk("text", {
+        x: r.x.toFixed(1),
+        y: (r.y + r.dy).toFixed(1),
+        "class": "rlabel",
+        "text-anchor": "middle"
+      });
+      label.textContent = r.name;
+      nodeG.appendChild(label);
+
+      if (!reduceMotion){
+        var anim = mk("animate", {
+          attributeName: "opacity",
+          values: "0.5;1;0.5",
+          dur: (3 + i * 0.4).toFixed(1) + "s",
+          repeatCount: "indefinite"
+        });
+        glow.appendChild(anim);
+      }
+
+      svg.appendChild(nodeG);
+    });
+  })();
+
+  /* ----------------------------------------------------------
+     10. NAV ACTIVE STATE
+     ---------------------------------------------------------- */
+  (function navActive(){
+    var links = Array.prototype.slice.call(document.querySelectorAll(".nav a"));
+    if (!links.length || !("IntersectionObserver" in window)) return;
+
+    var map = {};
+    links.forEach(function(a){
+      var id = a.getAttribute("href").replace("#", "");
+      var sec = document.getElementById(id);
+      if (sec) map[id] = a;
+    });
+
+    var current = null;
+    function setActive(id){
+      if (current === id) return;
+      current = id;
+      links.forEach(function(a){ a.classList.remove("active"); });
+      var el = map[id];
+      if (el){
+        el.classList.add("active");
+        // keep visible inside horizontally scrolling nav
+        var nav = el.parentNode;
+        var left = el.offsetLeft - nav.clientWidth / 2 + el.clientWidth / 2;
+        if (nav.scrollWidth > nav.clientWidth){
+          nav.scrollTo({ left: Math.max(0, left), behavior: reduceMotion ? "auto" : "smooth" });
+        }
+      }
+    }
+
+    var obs = new IntersectionObserver(function(entries){
+      var visible = entries.filter(function(e){ return e.isIntersecting; });
+      if (!visible.length) return;
+      visible.sort(function(a, b){ return b.intersectionRatio - a.intersectionRatio; });
+      setActive(visible[0].target.id);
+    }, { rootMargin: "-25% 0px -55% 0px", threshold: [0.01, 0.15, 0.35, 0.6] });
+
+    Object.keys(map).forEach(function(id){
+      var sec = document.getElementById(id);
+      if (sec) obs.observe(sec);
+    });
+  })();
+
+})();
+</script>
+</body>
+</html>
